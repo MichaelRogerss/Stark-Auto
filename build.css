@@ -19,7 +19,27 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
+.devoverlay{
+    position: absolute;
+    background-color: #282828;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    >img{
+        padding-bottom:2rem;
+    }
+    display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    >h3{
+        color:white;
+    }
+    >h2{
+        color:white;
+    }
+}
 nav{
     background-color: #282828;
     display:flex;
@@ -77,6 +97,59 @@ nav{
     height: 25rem;
 }
 
+
+footer{
+    background-color: #282828;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    >div{
+        justify-content: center;
+        display:flex;
+        flex-direction: row;
+        gap:3rem;
+        >div{
+            display: flex;
+            flex-direction: column;
+            >h5{
+                color:white;
+                
+            }
+            >a{
+                color:white;
+                max-width: 20rem;
+            }
+            >p{
+                max-width: 20rem;
+            }
+            >input{
+                padding: 0.4rem;
+    background-color: #424242;
+    border: none;
+    border-radius: 5px;
+            }
+        }
+    }
+}
+@media (max-width: 651px) {
+    footer>div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.foot-contact-card{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+    >svg{
+        height:20px;
+        width:20px;
+    }
+    >div{
+        display:flex;
+        flex-direction: column;
+    }
+}
 html {
    overflow-x: hidden;
  }
