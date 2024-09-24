@@ -19,4 +19,28 @@ body {
 
 nav{
     background-color: #282828;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1rem;
+    >button{
+        background:none;
+        border:none;
+        >svg{
+            width:2.5rem;
+            height:2.5rem;
+        }
+    }
+}
+
+.navcenter{
+    >img{
+        width:8rem;
+    }
+}
+
+.alert{
+    background-color:#ea1d2b;
+    color:white;
+    font-weight: 700;
 }
