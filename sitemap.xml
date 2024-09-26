@@ -19,7 +19,14 @@
       <loc>https://starkautorepairs.com/why-game-changer.html</loc>
       <lastmod>2024-09-24</lastmod>
       <changefreq>daily</changefreq>
-      <priority>0.8</priority>
+      <priority>0.3</priority>
+   </url>
+
+   <url>
+      <loc>https://starkautorepairs.com/why-game-changer.html</loc>
+      <lastmod>2024-09-24</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.3</priority>
    </url>
 
 </urlset>
