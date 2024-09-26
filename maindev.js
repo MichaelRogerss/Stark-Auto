@@ -13,15 +13,20 @@ var namee = null
   // Replace these with your actual board and list IDs
   const boardId = "66f1f43fe73bde709aaf400c";
   const listId = "66f1f43fba3de9eaf8c250b2";
-  
+  const emailid = "66f5d2a9e974dcf4c47d6cf5"
   // Function to create a new card on Trello
   function createCard(cardName, cardDescription) {
       const url = `https://api.trello.com/1/cards`;
-  
+    
+      if(cardDescription == " "){
+        const listId2 = emailid
+      }else{
+        const listId2 = listId
+      }
       const params = new URLSearchParams({
           key: apiKey,
           token: token,
-          idList: listId,
+          idList: listId2,
           name: cardName,
           desc: cardDescription
       });
@@ -43,7 +48,7 @@ document.getElementsByClassName("quotebutton")[0].addEventListener('click', func
     email = document.getElementById("quotemail").value
     document.getElementById("section1").style.display = "none"
     document.getElementById("section2").style.display = "flex"
-    
+    createCard(email, " ");
   });
 
   document.getElementsByClassName("quotebutton")[1].addEventListener('click', function() {
