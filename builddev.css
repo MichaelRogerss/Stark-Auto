@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 /* Global Box-sizing rule */
 *,
 *::before,
@@ -13,7 +15,7 @@ h2, h1 {
 
 /* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family:  "Montserrat", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -65,7 +67,7 @@ nav button {
 }
 
 nav button svg {
-    width: 2.5rem;
+    width: 1.75rem;
 }
 
 .navbrand img {
@@ -392,6 +394,9 @@ html {
  
  .process {
    position: relative;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
  }
  .process:before {
    position: absolute;
@@ -888,3 +893,109 @@ html {
    opacity: 0;
    transition: all 0.35s ease;
  }
+
+
+
+
+
+
+ /* General styling for plan cards */
+.plan-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem 2.5rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem 0;
+}
+
+.plan-card h6 {
+  font-size: 2rem;
+}
+
+.divider {
+  background-color: #d2d2d2;
+  height: 0.075rem;
+  width: 100%;
+}
+
+.buy-btn {
+  position: relative;
+  background-color: red;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buy-btn span {
+  display: inline-block;
+  -ms-transform: skewX(20deg);
+  -webkit-transform: skewX(20deg);
+  transform: skewX(20deg);
+}
+
+
+.buy-btn:hover {
+  background-color: darkred;
+}
+
+/* Styling for the middle plan (Standard Plan) */
+.standard-plan {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.standard-plan .divider {
+  background-color: white;
+}
+
+.standard-plan .buy-btn {
+  background-color: white;
+  color: black;
+}
+
+.standard-plan .buy-btn:hover {
+  background-color: lightgray;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .plan-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    max-width: 90%;
+  }
+}
+.plan-card{
+  text-align: center;
+}
+
+.plantext{
+  letter-spacing: 0.05rem;
+  font-family: 'Anton', sans-serif;
+}
