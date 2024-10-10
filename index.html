@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="
 canonical
 " href="
 https://starkautorepairs.com
 " />
         <!-- SEO Title with Keywords -->
-        <title>Mobile Mechanic Services in Stark County, OH | Stark Auto Repairs</title>
+        <title>Stark Auto Repairs - Mobile Mechanic</title>
     
         <!-- Meta Description for SEO -->
         <meta name="description" content="Stark Auto Repairs provides on-site auto repair services in Stark County, Ohio. Contact us for fast and reliable automotive services at your convenience.">
@@ -27,13 +28,13 @@ https://starkautorepairs.com
           "image": "https://starkautorepairs.com/logo.png",
           "@id": "",
           "url": "https://starkautorepairs.com",
-          "telephone": "+1-330-123-4567",
+          "telephone": "+1-330-333-9916",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "1302 14th st nw",
+            "streetAddress": "2403 44TH ST NW",
             "addressLocality": "Canton",
             "addressRegion": "OH",
-            "postalCode": "44703",
+            "postalCode": "44709",
             "addressCountry": "US"
           },
           "priceRange": "$$",
@@ -48,334 +49,1180 @@ https://starkautorepairs.com
         </script>
     
         <!-- Open Graph for Social Media Sharing -->
-        <meta property="og:title" content="Mobile Mechanic Stark County OH - On-Site Auto Repair | Stark Auto Repairs">
+        <meta property="og:title" content="Stark Auto Repairs - Mobile Mechanic">
         <meta property="og:description" content="Fast and reliable mobile mechanic services in Stark County, Ohio. We come to you!">
         <meta property="og:url" content="https://starkautorepairs.com">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://starkautorepairs.com/logo.png">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+        
         <!-- Twitter Card for Social Sharing -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Mobile Mechanic Stark County OH - On-Site Auto Repair | Stark Auto Repairs">
-        <meta name="twitter:description" content="Stark Auto Repairs provides on-site auto repair services in Stark County, Ohio. Contact us for fast and reliable automotive services at your convenience.">
+        <meta name="twitter:description" content="Stark Auto Repairs provides on-site auto repair services in Canton, Ohio. Contact us for fast and reliable automotive services at your convenience.">
         <meta name="twitter:image" content="https://starkautorepairs.com/logo.png">
-    
-        <!-- Link to external CSS -->
-        <link rel="stylesheet" href="bulma-no-dark-mode.min.css">
-        <link rel="stylesheet" href="build.css">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <!-- CSS here -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.min.css">
+  <link rel="stylesheet" href="assets/css/flaticon_fixton.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.css">
+  <link rel="stylesheet" href="assets/css/backtotop.css">
+  <link rel="stylesheet" href="assets/css/venobox.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
 
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-76R4P4VN0K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<body class="absolute_header">
+  <div class="body-overlay d-xl-none"></div>
 
-  gtag('config', 'G-76R4P4VN0K');
-</script>
-    </head>
-    
-<body>
-    
-    <header>
-        <nav>
-            <a class="navbrand" title="brand" href="/">
-                <img src="logo.png" alt="logo">
-            </a>
-            <div class="navcenter">
-                <a  
-                title="Stark Auto Repairs"
-                  href="#services">
-                    Services
+  <!-- star: BackToTop -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- end: BackToTop -->
+
+  <!-- start: Preloader -->
+  <div id="preloader">
+    <button class="closeLoader primary_btn"><span>Cancel Preloader</span></button>
+
+    <figure class="loader">
+      <div class="car">
+        <span class="body"></span>
+        <span class="wheels"></span>
+      </div>
+      <div class="strikes">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </figure>
+  </div>
+  <!-- end: Preloader -->
+
+  <!-- start: Search Popup -->
+  <div class="search_popup">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-12">
+          <div class="search_wrapper">
+            <div class="search_top d-flex align-items-center">
+              <div class="search_logo">
+                <a href="index.html">
+                  <img src="./assets/images/logos/primary-logo.png" alt="logo">
                 </a>
-                <a   
-                title="Stark Auto Repairs"
-                 href="#quote">
-                    Request a quote
-                </a>
+              </div>
+              <div class="search_close">
+                <button type="button" class="search_close_btn">
+                  <i class="fa-light fa-times"></i>
+                </button>
+              </div>
             </div>
-            <button aria-label="Call us" style="
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    color: white;
-">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 480.56 480.56" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M365.354 317.9c-15.7-15.5-35.3-15.5-50.9 0-11.9 11.8-23.8 23.6-35.5 35.6-3.2 3.3-5.9 4-9.8 1.8-7.7-4.2-15.9-7.6-23.3-12.2-34.5-21.7-63.4-49.6-89-81-12.7-15.6-24-32.3-31.9-51.1-1.6-3.8-1.3-6.3 1.8-9.4 11.9-11.5 23.5-23.3 35.2-35.1 16.3-16.4 16.3-35.6-.1-52.1-9.3-9.4-18.6-18.6-27.9-28-9.6-9.6-19.1-19.3-28.8-28.8-15.7-15.3-35.3-15.3-50.9.1-12 11.8-23.5 23.9-35.7 35.5-11.3 10.7-17 23.8-18.2 39.1-1.9 24.9 4.2 48.4 12.8 71.3 17.6 47.4 44.4 89.5 76.9 128.1 43.9 52.2 96.3 93.5 157.6 123.3 27.6 13.4 56.2 23.7 87.3 25.4 21.4 1.2 40-4.2 54.9-20.9 10.2-11.4 21.7-21.8 32.5-32.7 16-16.2 16.1-35.8.2-51.8-19-19.1-38.1-38.1-57.2-57.1zM346.254 238.2l36.9-6.3c-5.8-33.9-21.8-64.6-46.1-89-25.7-25.7-58.2-41.9-94-46.9l-5.2 37.1c27.7 3.9 52.9 16.4 72.8 36.3 18.8 18.8 31.1 42.6 35.6 68.8zM403.954 77.8c-42.6-42.6-96.5-69.5-156-77.8l-5.2 37.1c51.4 7.2 98 30.5 134.8 67.2 34.9 34.9 57.8 79 66.1 127.5l36.9-6.3c-9.7-56.2-36.2-107.2-76.6-147.7z" fill="#FFFFFF" opacity="1" data-original="#000000"></path></g></svg>
-                (330) 333-9916
+            <div class="search_form">
+              <form action="#">
+                <div class="search_input">
+                  <input class="search-input-field" type="text" placeholder="Type here to search...">
+                  <span class="search-focus-border"></span>
+                  <button type="submit"><i class="flaticon-magnifying-glass"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search-popup-overlay"></div>
+  <!-- end: Search Popup -->
+
+  <!-- start: sidebar -->
+  <div class="sidebar_wrapper">
+    <div class="sidebar_content">
+      <button class="close_button sidebar_close"><i class="far fa-times"></i></button>
+
+      <div class="sidebar_content_box">
+        <div class="sidebar_logo">
+          <a href="index.html" class="logo"><img src="./assets/images/logos/secondary-logo.png" alt="ThemeShala"></a>
+        </div>
+        <div class="desc">
+          <p>Evening moveth cattle fruitful man male heaven creature behold open fowe appear upon creature him day
+            spirit female whose.</p>
+        </div>
+        <ul class="ts_socials">
+          <li>
+            <a href="https://facebook.com/starkautorepairs" target="_blank"  class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar_content_box">
+        <h4 class="widget_title">Get In Touch</h4>
+
+        <div class="contact_info">
+          <div class="info_box">
+            <h5 class="box_title">Address Location</h5>
+            <div class="box_content">
+              <div class="box_icon"><i class="fas fa-location-dot"></i></div>
+              <p class="box_text">2403 44TH ST NW, CANTON OH 44709</p>
+            </div>
+          </div>
+          <div class="info_box">
+            <h5 class="box_title">Phone Number</h5>
+            <div class="box_content">
+              <div class="box_icon"><i class="fas fa-phone"></i></div>
+              <p class="box_text"><a href="tel:+13303339916">+1 (330) 333-9916</a></p>
+            </div>
+          </div>
+          <div class="info_box">
+            <h5 class="box_title">Email Address</h5>
+            <div class="box_content">
+              <div class="box_icon"><i class="fas fa-envelope"></i></div>
+              <p class="box_text"><a href="mailto:info@fixton.com">info@starkautorepairs.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar_content_box">
+        <h4 class="widget_title">Newsletter</h4>
+
+        <div class="newsletter">
+          <p class="text">Subscribe to our newsletter and receive 15% discount from your order.</p>
+          <form action="#" class="newsletter_form">
+            <div class="nform_group">
+              <input class="form-control" type="email" placeholder="Enter email address" required="">
+            </div>
+            <button type="submit" class="icon_btn"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end: sidebar -->
+
+  <!-- start: OffCanvas Menu -->
+  <div class="offcanvas-area d-xl-none">
+    <div class="offcanvas_bg"></div>
+    <div class="offcanvas_wrapper">
+      <div class="offcanvas_top d-flex align-items-center">
+        <div class="offcanvas_logo">
+          <a href="index.html"><img src="./assets/images/logos/primary-logo.png" alt="ThemeShala"></a>
+        </div>
+        <div class="offcanvas_close">
+          <button class="offcanvas_close_btn"><i class="fa-thin fa-times"></i></button>
+        </div>
+      </div>
+
+      <div class="offcanvas_menu">
+        <div class="mobile_menu"></div>
+      </div>
+
+      <div class="offcanvas_bottom">
+        <div class="contact_info">
+          <h6 class="title">Contact Info</h6>
+
+          <ul class="info_list">
+            <li class="info_item">
+              <div class="item_inner  d-flex gap-2">
+                <div class="icon">
+                  <a target="_blank"
+                    href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">
+                    <i class="flaticon-maps-and-flags"></i>
+                  </a>
+                </div>
+                <div class="text">
+                  <a target="_blank"
+                    href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">
+                   Canton, OH
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="info_item">
+              <div class="item_inner d-flex gap-2">
+                <div class="icon">
+                  <a target="_blank" href="tel:+088889797697">
+                    <i class="flaticon-phone-call"></i>
+                  </a>
+                </div>
+                <div class="text">
+                  <a target="_blank" href="tel:+13303339916">
+                    +1 (330) 333-9916
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="info_item">
+              <div class="item_inner d-flex gap-2">
+                <div class="icon">
+                  <a target="_blank" href="mailto:support@fixton.com">
+                    <i class="flaticon-envelope-1"></i>
+                  </a>
+                </div>
+                <div class="text">
+                  <a target="_blank" href="mailto:support@fixton.com">
+                    info@starkautorepairs.com
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="socials">
+          <ul>
+            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li><a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li><a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end: OffCanvas Menu -->
+
+  <!-- start: Header Area -->
+  <header class="header-area header-2 header-absolute">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="main_header_wrap d-flex flex-wrap gap-3 align-items-center">
+
+            <!-- logo -->
+            <div class="site_logo style-2">
+              <a href="index.html" class="logo"><img src="./assets/images/logos/primary-logo.png" alt="LOGO"></a>
+            </div>
+
+            <!-- main menu -->
+            <div class="site_menu">
+              <nav class="main_menu style-2 d-none d-xl-block" id="main-menu">
+                <ul>
+                  <li class="has-dropdown current-menu-ancestor"><a href="index.html">home</a>
+                    <ul class="sub-menu">
+                      <li class="current-menu-item"><a href="index.html">Home</a></li>
+                      <li ><a href="index-2.html">Canton Location</a></li>
+                      
+                      
+                    </ul>
+                  </li>
+                  <li class="has-dropdown"><a href="services.html">services</a>
+                    <ul class="sub-menu">
+                      <li><a href="services.html">services</a></li>
+                      <li><a href="service-details.html">service details</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="has-dropdown">
+                    <a href="javascript:void(0)">pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="team.html">Team</a></li>
+                      <li><a href="team-details.html">Team Details</a></li>
+                      <li><a href="pricing.html">pricing</a> </li>
+                      <li><a href="faq.html">faq page</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="has-dropdown"><a href="blog.html">news</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog.html">Blog Classic</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- header right -->
+            <div class="header_right d-none d-sm-flex">
+
+       
+
+              <a href="contact.html" class="primary_btn d-none d-md-inline-flex">
+                <span>get quote</span>
+                <span class="icon_box">
+                  <i class="fa-solid fa-arrow-right icon_first"></i>
+                  <i class="fa-solid fa-arrow-right icon_second"></i>
+                </span>
+              </a>
+            </div>
+
+            <!-- sidebar -->
+            <button class="header_sidebar">
+              <i class="flaticon-dialpad"></i>
             </button>
-        </nav>
-    </header>
 
-    <div class="alert">
-        
-    </div>
-    <main>
-        
-        <div class="main-slider-one__bg" style="background-image: url(slider-min.jpg);">
-            <h1 class="bannertxt"><p style="
-                font-size: 1.3rem;
-            ">Stark County's Top Rated
-            </p>Mobile Mechanic Service</h1>
-            <h2>
-                Need fast, reliable auto repairs? We’ve got you covered. Serving the Stark County area with expert, on-the-go automotive services.
-
-
-            </h2>
-            <button style="
-    font-weight: 600;
-">Get a quote</button>
+            <!-- toggle button -->
+            <div class="menu_bar d-xl-none">
+              <button class="menu_bar_icon"><i class="fa-regular fa-bars-sort"></i></button>
+            </div>
+          </div>
         </div>
-        <section class="section-process">
-            <div class="container quoteform">
-                <h2>Request a quote.</h2>
-                <div class="sectionquote" id="section1">
-                    <input id="quotemail" placeholder="Your Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512;position: absolute;left: 0;top: -3.1rem;rotate: 260deg;transform: scaleX(-1);height: 3rem;" xml:space="preserve"><g><path fill="#FF6666" d="m47.12 31.403-9.992-9.992a2.98 2.98 0 1 0-4.215 4.216l3.037 3.037C15.565 29.665 2.31 15.984 2.188 1.96c-.004-.507-.716-.61-.874-.144-4.922 14.579 4.03 32.89 27.427 36.201 2.266.295 4.558.519 6.868.681l-2.697 2.697a2.98 2.98 0 1 0 4.215 4.215l9.992-9.992a2.98 2.98 0 0 0 .001-4.215z" opacity="1" data-original="#ffcc66"></path></g></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512;position: absolute;right: 0;top: -3.1rem;rotate: 105deg;height: 3rem;" xml:space="preserve"><g><path fill="#FF6666" d="m47.12 31.403-9.992-9.992a2.98 2.98 0 1 0-4.215 4.216l3.037 3.037C15.565 29.665 2.31 15.984 2.188 1.96c-.004-.507-.716-.61-.874-.144-4.922 14.579 4.03 32.89 27.427 36.201 2.266.295 4.558.519 6.868.681l-2.697 2.697a2.98 2.98 0 1 0 4.215 4.215l9.992-9.992a2.98 2.98 0 0 0 .001-4.215z" opacity="1" data-original="#ffcc66"></path></g></svg>
-                </input>
-                    <button class="quotebutton">Continue</button>
-                </div>
+      </div>
+    </div>
+  </header>
+  <header class="header-area header-2 header-duplicate header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="main_header_wrap d-flex flex-wrap gap-3 align-items-center">
 
-                <div class="sectionquote" id="section2" style="display:none">
-                    <input id="quotename" placeholder="Name">
-                    <input id="quotenumber" placeholder="Phone Number">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512;position: absolute;left: 0;top: -3.1rem;rotate: 260deg;transform: scaleX(-1);height: 3rem;" xml:space="preserve"><g><path fill="#FF6666" d="m47.12 31.403-9.992-9.992a2.98 2.98 0 1 0-4.215 4.216l3.037 3.037C15.565 29.665 2.31 15.984 2.188 1.96c-.004-.507-.716-.61-.874-.144-4.922 14.579 4.03 32.89 27.427 36.201 2.266.295 4.558.519 6.868.681l-2.697 2.697a2.98 2.98 0 1 0 4.215 4.215l9.992-9.992a2.98 2.98 0 0 0 .001-4.215z" opacity="1" data-original="#ffcc66"></path></g></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512;position: absolute;right: 0;top: -3.1rem;rotate: 105deg;height: 3rem;" xml:space="preserve"><g><path fill="#FF6666" d="m47.12 31.403-9.992-9.992a2.98 2.98 0 1 0-4.215 4.216l3.037 3.037C15.565 29.665 2.31 15.984 2.188 1.96c-.004-.507-.716-.61-.874-.144-4.922 14.579 4.03 32.89 27.427 36.201 2.266.295 4.558.519 6.868.681l-2.697 2.697a2.98 2.98 0 1 0 4.215 4.215l9.992-9.992a2.98 2.98 0 0 0 .001-4.215z" opacity="1" data-original="#ffcc66"></path></g></svg>
-                </input>
-                    <button class="quotebutton">Continue</button>
-                </div>
+            <!-- logo -->
+            <div class="site_logo style-2">
+              <a href="index.html" class="logo"><img src="./assets/images/logos/primary-logo.png" alt="LOGO"></a>
+            </div>
 
-                <div class="sectionquote" id="sectionend" style="display:none">
-                  <h5>Thank you!</h5>
-                  <h5>You should be hearing back from us shortly.</h5>
-                </div>
-                </div>
-            
-        </section>
-        <section>
-            <section class="section process" >
-                <div class="container">
-                    <div class="columns is-multiline is-desktop is-align-items-center">
-                        <div class="column is-5-desktop">
-                            <div class="process-block pl-4">
-                                <span class="is-uppercase text-sm letter-spacing">Why choose us</span>
-                                <h2 class="mb-4 mt-3">We come to you!</h2>
-                                <p class="mb-4">At Stark Auto Repairs, we understand that your vehicle is essential to your everyday life. That’s why we bring our expert services right to your doorstep! No more waiting in line or adjusting your schedule; our dedicated team is committed to enhancing your vehicle's performance wherever you are.
+            <!-- main menu -->
+            <div class="site_menu">
+              <nav class="main_menu style-2 d-none d-xl-block">
+                <ul>
+                  <li class="has-dropdown current-menu-ancestor"><a href="index.html">home</a>
+                    <ul class="sub-menu">
+                      <li class="current-menu-item"><a href="index.html">Home</a></li>
+                      <li><a href="index-2.html">Canton Location</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="has-dropdown"><a href="services.html">services</a>
+                    <ul class="sub-menu">
+                      <li><a href="services.html">services</a></li>
+                      <li><a href="service-details.html">service details</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="has-dropdown">
+                    <a href="javascript:void(0)">pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="team.html">Team</a></li>
+                      <li><a href="team-details.html">Team Details</a></li>
+                      <li><a href="pricing.html">pricing</a> </li>
+                      <li><a href="faq.html">faq page</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="has-dropdown"><a href="blog.html">news</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog.html">Blog Classic</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">contact</a></li>
+                </ul>
+              </nav>
+            </div>
 
-                                    With a focus on precision and care, we tailor our approach to meet your unique needs, ensuring your car operates smoothly and reliably. Whether you're at home, work, or on the go, you can trust us to keep you on the road with confidence. Choose convenience and quality—choose Stark Auto Repairs!
-                                </p>
-                            </div>
-                        </div>
-            
-                        <div class="column is-7-desktop">
-                            <div class="columns is-multiline custom-grid">
-                                <div class="column is-6-widescreen is-6-tablet">
-                                    <div class="icon-block has-text-centered">
-                                        <img alt=" Oil Change" class="icon-block has-text-centered" src="images/oilc.png"
-">
-</div>
-                                </div>
-            
-                                <div class="column is-6-widescreen is-6-tablet pb-0">
-                                    <div class="icon-block has-text-centered mt-30">
-                                        <img alt="Diagnostics" class="icon-block has-text-centered" src="images/Diagnostics.png"
-">
-                                       </div>
-                                </div>
-            
-                                <div class="column is-6-widescreen is-6-tablet pt-0">
-                                    <img alt="Brakes" class="icon-block has-text-centered" src="images/Brakes.png"
-">
-                                       
-                                </img>
-                                </div>
-            
-                                <div class="column is-6-widescreen is-6-tablet pt-0">
-                                    <div class="icon-block has-text-centered mt-30">
-                                  
-                                    </div>
-                                </div>
-                            </div>
-                        </div>	
+            <!-- header right -->
+            <div class="header_right d-none d-sm-flex">
+
+              
+
+              <a href="contact.html" class="primary_btn d-none d-md-inline-flex">
+                <span>get quote</span>
+                <span class="icon_box">
+                  <i class="fa-solid fa-arrow-right icon_first"></i>
+                  <i class="fa-solid fa-arrow-right icon_second"></i>
+                </span>
+              </a>
+            </div>
+
+            <!-- sidebar -->
+            <button class="header_sidebar">
+              <i class="flaticon-dialpad"></i>
+            </button>
+
+            <!-- toggle button -->
+            <div class="menu_bar d-xl-none">
+              <button class="menu_bar_icon"><i class="fa-regular fa-bars-sort"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end: Header Area -->
+
+  <main id="primary" class="site-content">
+    <!-- start: Slider Section -->
+    <section class="slider-section overflow-hidden">
+      <div class="hero_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider_item">
+            <div class="slider_bg" data-bg-image="./assets/images/slider/slider-1.jpg"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="slider_content">
+                    <div class="hero_socials">
+                      <ul class="ts_socials style-2 vertical">
+                        <li><a href="https://facebook.com/starkautorepairs.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.yelp.com/biz/stark-auto-repairs-mobile-mechanic-canton-4" target="_blank" class="fa-brands fa-yelp"></i></a></li>
+                        
+                      </ul>
                     </div>
+
+                    <div class="hero_title">
+                      <h1 class="title">
+                        Delivering <span>Excellence</span> in Every Repair
+                      </h1>
+                    </div>
+                    
+                    <div class="desc">
+                      <div>
+                        <p>Experience the Difference</p>
+                      </div>
+                    </div>
+
+                    <div class="hero_button">
+                      <div>
+                        <a href="about.html" class="primary_btn">
+                          <span>learn more</span>
+                          <span class="icon_box">
+                            <i class="fa-solid fa-arrow-right icon_first"></i>
+                            <i class="fa-solid fa-arrow-right icon_second"></i>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider_item">
+            <div class="slider_bg" data-bg-image="./assets/images/slider/slider-2.jpg"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="slider_content">
+                    <div class="hero_socials">
+                      <ul class="ts_socials style-2 vertical">
+                        <li><a href="https://facebook.com/starkautorepairs.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.yelp.com/biz/stark-auto-repairs-mobile-mechanic-canton-4" target="_blank" class="fa-brands fa-yelp"></i></a></li>
+                        
+                      </ul>
+                    </div>
+
+                    <div class="hero_title">
+                      <h1 class="title">
+                        Empowering <span>Reliability</span> with Every Fix
+                      </h1>
+                    </div>
+                    
+                    <div class="desc">
+                      <div>
+                        <p>Experience the Difference</p>
+                      </div>
+                    </div>
+
+                    <div class="hero_button">
+                      <div>
+                        <a href="about.html" class="primary_btn">
+                          <span>learn more</span>
+                          <span class="icon_box">
+                            <i class="fa-solid fa-arrow-right icon_first"></i>
+                            <i class="fa-solid fa-arrow-right icon_second"></i>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider_item">
+            <div class="slider_bg" data-bg-image="./assets/images/slider/slider-3.jpg"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="slider_content">
+                    <div class="hero_socials">
+                      <ul class="ts_socials style-2 vertical">
+                        <li><a href="https://facebook.com/starkautorepairs.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.yelp.com/biz/stark-auto-repairs-mobile-mechanic-canton-4" target="_blank" class="fa-brands fa-yelp"></i></a></li>
+                        
+                      </ul>
+                    </div>
+
+                    <div class="hero_title">
+                      <h1 class="title">
+                        <span>24/7</span> Roadside Assistance
+                      </h1>
+                    </div>
+                    <div class="desc">
+                      <div>
+                        <p>Experience the Difference</p>
+                      </div>
+                    </div>
+
+                    <div class="hero_button">
+                      <div>
+                        <a href="about.html" class="primary_btn">
+                          <span>learn more</span>
+                          <span class="icon_box">
+                            <i class="fa-solid fa-arrow-right icon_first"></i>
+                            <i class="fa-solid fa-arrow-right icon_second"></i>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider_navigation d-none d-lg-inline-flex">
+          <div class="nav slider_next"><i class="flaticon-right-arrow"></i></div>
+          <div class="nav slider_prev"><i class="flaticon-left-arrow"></i></div>
+        </div>
+        <div class="slider_pagination d-lg-none"></div>
+      </div>
+    </section>
+    <!-- end: Slider Section -->
+
+    <!-- start: About Section -->
+    <div class="about-section style-2" data-bg-image="./assets/images/bg/global-dark-bg.png">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="about_content style-2">
+              <div class="section_title">
+                <h2 class="title wow fadeInUp" data-wow-delay=".3s">Leading Car Repair Experts</h2>
+                <div class="desc wow fadeInUp" data-wow-delay=".4s">
+                  <p>At Stark Auto Repairs, we treat every vehicle with the utmost care and professionalism. Our experienced team
+                    understands that your car is more than just transportation – it's a part of your lifestyle. We provide reliable
+                    and efficient service, ensuring your vehicle runs smoothly for years to come. From diagnostics to repairs, we're
+                    committed to excellence in every step.</p>
+                </div>
+              </div>
+              <div class="about_quote wow fadeInUp" data-wow-delay=".5s">
+                “ Your satisfaction drives our commitment to quality service. ”
+              </div>
+              <div class="buttons d-flex flex-wrap align-items-start">
+                <div class="author_info wow fadeInUp" data-wow-delay=".6s">
+                  <h5 class="name"><a href="#">Macaulay Arnold</a></h5>
+                  <span class="designation">Founder & Lead Mechanic</span>
+                </div>
+                <div class="author_info wow fadeInUp" data-wow-delay=".6s">
+                  <h5 class="name"><a href="#">Michael Rogers</a></h5>
+                  <span class="designation">Co-Founder & Technician</span>
+                </div>
             
-        </section>
+                <div class="wow fadeInRight" data-wow-delay=".7s">
+                  <a href="about.html" class="primary_btn">
+                    <span>learn more</span>
+                    <span class="icon_box">
+                      <i class="fa-solid fa-arrow-right icon_first"></i>
+                      <i class="fa-solid fa-arrow-right icon_second"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
 
-
-        
-<section class="section process" style="
-background-color: #ebebeb;
-">
-    <h2 class="section-title">Our Services</h2>
-    <div class="services-container">
-
-        <div class="service-item">
-            <h5 class="service-title">Oil Changes</h5>
-            <p>Oil and Filter Change</p>
-            <p><strong>Starting at $39.99</strong></p>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="about_img style-2">
+              <div class="shaped_img position-relative wow fadeInRight" data-wow-delay=".6s">
+                <img src="./assets/images/about/h2-about-img.jpg" alt="ThemeShala">
+                <div class="panel-right wow"></div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="service-item">
-            <h5 class="service-title">Brake Replacement</h5>
-            <p>Brake Pads, Rotors, and Rotor Refinishing</p>
-        </div>
-
-        <div class="service-item">
-            <h5 class="service-title">Steering and Suspension</h5>
-            <p>Ball Joints, Control Arms, Stabilizers</p>
-            <p>Wheel Hubs and Bearings</p>
-            <p>Tie Rod Ends and Rack and Pinion</p>
-        </div>
-
-        <div class="service-item">
-            <h5 class="service-title">Tune Up</h5>
-            <p>Spark Plugs and Wires/Ignition Coils</p>
-        </div>
-
-        <div class="service-item">
-            <h5 class="service-title">Cooling Systems</h5>
-            <p>Radiator, Thermostat, Coolant Flush</p>
-        </div>
-
-        <div class="service-item">
-            <h5 class="service-title">Charging Systems</h5>
-            <p>Battery Check/Replacement</p>
-            <p>Alternator Check/Replacement</p>
-        </div>
-
-        <div class="service-item">
-            <h5 class="service-title">Aftermarket Parts</h5>
-            <p>Subwoofer Installation</p>
-            <p>Carplay Installation</p>
-            <p>Remote Start Installation</p>
-        </div>
-
-        <div class="service-item">
-            <h5 class="service-title">Engine Repair</h5>
-            <p>Valve Cover Gasket</p>
-            <p>Head Gasket</p>
-            <p>Oil Pan</p>
-        </div>
-        </div>
-        <h5 style="
-    margin-top: 2rem;
-">Service Areas:</h5>
-        <p style="text-align:center;">• Canton, OH • Massillon, OH • Alliance, OH • Akron, OH • Barberton, OH • Green, OH</p>
-    
-</section>
-
-
-<section class="section process" style="
-text-align: center;
-
-">
-    <h3 class="plantext" style="font-size: 2.3rem;">
-        Competitive Repair Plans
-    </h5>
-    <div class="plan-container">
-      <!-- Basic Plan -->
-      <div class="plan-card">
-        <p class="plantext">Basic Plan</p>
-        <h6 class="plantext" >$79.99</h6>
-        <span class="divider"></span>
-        <p>Basic Diagnostics</p>
-        <p>Free Oil Change</p>
-        <p>On-Site Diagnosis (up to 2 visits/month)</p>
-        <a href="https://buy.stripe.com/14k4ik7FC2uCf0AbIJ" target="_blank" class="plantext buy-btn"><span>Buy Package</span></a>
-      </div>
-      
-      <!-- Standard Plan -->
-      <div class="plan-card standard-plan">
-        <p class="plantext">Standard Plan</p>
-        <h6 class="plantext" style="color:white">$109.99</h6>
-        <span class="divider"></span>
-        <p>Advanced Diagnostics</p>
-        <p>On-Site Diagnosis (up to 5 visits/month)</p>
-        <p>Priority Booking</p>
-        <p>Tire Inspection</p>
-        <p>Free Roadside Assistance</p>
-        <a  class="plantext  buy-btn" href="https://buy.stripe.com/dR6bKM5xufhog4E4gi" target="_blank"><span>Buy Package</span></a>
-      </div>
-      
-      <!-- Premium Plan -->
-      <div class="plan-card">
-        <p class="plantext">Premium Plan</p>
-        <h6 class="plantext" >$149.99</h6>
-        <span class="divider"></span>
-        <p>Advanced Diagnostics</p>
-        <p>Unlimited On-Site Diagnosis</p>
-        <p>Free Roadside Assistance & Priority Booking</p>
-        <p>Free Oil Change and Filter</p>
-        <p>Brake & Tire Inspection</p>
-        <p>Discount on Parts & Labor</p>
-        <a  href="https://buy.stripe.com/14k4ik7FC2uCf0AbIJ" target="_blank" class="plantext buy-btn"><span>Buy Package</span></a>
       </div>
     </div>
-  </section>
-  
-        
-        
-    </main>
+    <!-- end: About Section -->
 
-    <footer>
-        <div style="
-     justify-content: center;
- ">
-         
-         <div>
-             <h5>Contact</h5>
-             <div class="foot-contact-card">
-                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 25.625 25.625" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M22.079 17.835c-1.548-1.324-3.119-2.126-4.648-.804l-.913.799c-.668.58-1.91 3.29-6.712-2.234-4.801-5.517-1.944-6.376-1.275-6.951l.918-.8c1.521-1.325.947-2.993-.15-4.71l-.662-1.04C7.535.382 6.335-.743 4.81.58l-.824.72c-.674.491-2.558 2.087-3.015 5.119-.55 3.638 1.185 7.804 5.16 12.375 3.97 4.573 7.857 6.87 11.539 6.83 3.06-.033 4.908-1.675 5.486-2.272l.827-.721c1.521-1.322.576-2.668-.973-3.995l-.931-.801z" style="" fill="#FFFFFF" data-original="#030104" opacity="1"></path></g></svg>
-                 <div>
-                     <p>Phone</p>
-                     <p>&#x202A;(330) 333-9916&#x202C;</p>
-                 </div>
-             </div>
-             <div class="foot-contact-card">
-                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 25.625 25.625" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M22.079 17.835c-1.548-1.324-3.119-2.126-4.648-.804l-.913.799c-.668.58-1.91 3.29-6.712-2.234-4.801-5.517-1.944-6.376-1.275-6.951l.918-.8c1.521-1.325.947-2.993-.15-4.71l-.662-1.04C7.535.382 6.335-.743 4.81.58l-.824.72c-.674.491-2.558 2.087-3.015 5.119-.55 3.638 1.185 7.804 5.16 12.375 3.97 4.573 7.857 6.87 11.539 6.83 3.06-.033 4.908-1.675 5.486-2.272l.827-.721c1.521-1.322.576-2.668-.973-3.995l-.931-.801z" style="" fill="#FFFFFF" data-original="#030104" opacity="1"></path></g></svg>
-                 <div>
-                     <p>Email</p>
-                     <p>info@starkautorepairs.com</p>
-                 </div>
-             </div>
-         </div>
-         <div>
-             <h5>Newsletter</h5>
-             <p>
-                 Signup for out monthly newsletter for discounts and news.
-             </p>
-             <input placeholder="email">
-         </div>
-         <div>
-             <h5>Explore</h5>
-             <a href="blog.html">Blog</a>
-         </div>
+    <!-- start: Services Section -->
+    <section class="services-section style-2" data-bg-image="./assets/images/bg/global-light-bg.png">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section_title style-2 text-center">
+              <h6 class="subtitle wow fadeInUp" data-wow-delay=".3s">our services</h6>
+              <h2 class="title wow fadeInUp" data-wow-delay=".4s">our featured services</h2>
+            </div>
+          </div>
         </div>
-        <div style="
-    background-color: #333333;
-    !rem;!rem;!re;!r;!;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    justify-content: space-around;
-    margin-top:2rem;
-">
-            <img src="logo.png" alt="Logo" style="
-    width: 10rem;
-">
-<p>Copyright © 2024 All rights reserverd.</p>
-<div>
-<a  
-title="Facebook"
- href="https://facebook.com/starkautorepairs" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M448 0H64C28.704 0 0 28.704 0 64v384c0 35.296 28.704 64 64 64h384c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z" style="" fill="#1976D2" data-original="#1976d2"></path><path d="M432 256h-80v-64c0-17.664 14.336-16 32-16h32V96h-64c-53.024 0-96 42.976-96 96v64h-64v80h64v176h96V336h48l32-80z" style="" fill="#FAFAFA" data-original="#fafafa"></path></g></svg></a></div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="service_item style-3 wow fadeInUp" data-wow-delay=".3s">
+              <div class="service_img">
+                <img src="./assets/images/services/service-1.jpg" alt="ThemeShala">
+              </div>
+
+              <div class="service_content">
+                <div class="service_icon">
+                  <i class="flaticon-car-engine"></i>
+                </div>
+                <h4 class="title"><a href="service-details.html">check engine light</a></h4>
+                <a href="service-details.html" class="icon_btn service_btn"><i class="flaticon-right-arrow"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service_item style-3 wow fadeInUp" data-wow-delay=".4s">
+              <div class="service_img">
+                <img src="./assets/images/services/service-2.jpg" alt="ThemeShala">
+              </div>
+
+              <div class="service_content">
+                <div class="service_icon">
+                  <i class="flaticon-disc-brake"></i>
+                </div>
+                <h4 class="title"><a href="service-details.html">brake repair</a></h4>
+                <a href="service-details.html" class="icon_btn service_btn"><i class="flaticon-right-arrow"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service_item style-3 wow fadeInUp" data-wow-delay=".3s">
+              <div class="service_img">
+                <img src="./assets/images/services/service-3.jpg" alt="ThemeShala">
+              </div>
+
+              <div class="service_content">
+                <div class="service_icon">
+                  <i class="flaticon-oil"></i>
+                </div>
+                <h4 class="title"><a href="service-details.html">oil change</a></h4>
+                <a href="service-details.html" class="icon_btn service_btn"><i class="flaticon-right-arrow"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service_item style-3 wow fadeInUp" data-wow-delay=".4s">
+              <div class="service_img">
+                <img src="./assets/images/services/service-4.jpg" alt="ThemeShala">
+              </div>
+
+              <div class="service_content">
+                <div class="service_icon">
+                  <i class="flaticon-wrench"></i>
+                </div>
+                <h4 class="title"><a href="service-details.html">emission repair service</a></h4>
+                <a href="service-details.html" class="icon_btn service_btn"><i class="flaticon-right-arrow"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-     </footer>
 
-    <script type="text/javascript" src="main.js"></script>
+        <div class="row">
+          <div class="col">
+            <div class="all_services text-center">
+              <h5 class="text wow fadeInUp" data-wow-delay=".3s">if you're interested visit to all of our services</h5>
+              <div class="wow fadeInUp" data-wow-delay=".4s">
+                <a href="about.html" class="primary_btn services_button">
+                  <span>all services</span>
+                  <span class="icon_box">
+                    <i class="fa-solid fa-arrow-right icon_first"></i>
+                    <i class="fa-solid fa-arrow-right icon_second"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Services Section -->
 
+    
+
+    <!-- start: Features Sections -->
+    <section class="features-section" data-bg-image="./assets/images/bg/global-light-bg.png">
+      <div class="container">
+        <div class="row align-items-start align-items-xl-end">
+          <div class="col-lg-5 px-xl-0">
+            <div class="featured_img position-relative wow fadeInLeft" data-wow-delay=".7s">
+              <img src="./assets/images/Frame 9.jpg" alt="ThemeShala">
+              <div class="panel wow"></div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="features_wrap">
+              <div class="feature_item style-3 wow fadeInUp" data-wow-delay=".3s">
+                <div class="icon">
+                  <i class="flaticon-worker"></i>
+                </div>
+                <div class="content">
+                  <h4 class="title"><a href="#">Expert Technicians</a></h4>
+                  <div class="desc">
+                    <p>Our certified mechanics bring years of experience, ensuring that your vehicle is in the best hands possible.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature_item style-3 wow fadeInUp" data-wow-delay=".4s">
+                <div class="icon">
+                  <i class="flaticon-protection"></i>
+                </div>
+                <div class="content">
+                  <h4 class="title"><a href="#">Comprehensive Warranty</a></h4>
+                  <div class="desc">
+                    <p>All our services come with a full warranty, giving you peace of mind for any repairs or maintenance work.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature_item style-3 wow fadeInUp" data-wow-delay=".3s">
+                <div class="icon">
+                  <i class="flaticon-domestic"></i>
+                </div>
+                <div class="content">
+                  <h4 class="title"><a href="#">Domestic Vehicle Repair</a></h4>
+                  <div class="desc">
+                    <p>We specialize in providing top-notch repairs for all domestic car models, ensuring optimal performance.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature_item style-3 wow fadeInUp" data-wow-delay=".4s">
+                <div class="icon">
+                  <i class="flaticon-customer-support"></i>
+                </div>
+                <div class="content">
+                  <h4 class="title"><a href="#">Customer Support</a></h4>
+                  <div class="desc">
+                    <p>Our friendly and dedicated support team is always available to help with any queries or assistance you may need.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Features Sections -->
+
+    <!-- start: Counter Section -->
+    <section class="counter-section section-padding" data-bg-image="./assets/images/bg/global-light-bg.png">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <div class="fun_fact_item style-3 text-center">
+              <div class="fact_number">
+                <span class="odometer odometer-auto-theme" data-count="136"></span>
+
+              </div>
+              <h5 class="title">vehicles repaired</h5>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="fun_fact_item style-3 text-center">
+              <div class="fact_number">
+                <span class="odometer odometer-auto-theme" data-count="100"></span>
+                <span class="plus">+</span>
+              </div>
+              <h5 class="title">happy customers</h5>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="fun_fact_item text-center">
+              <div class="fact_number">
+                <span class="odometer odometer-auto-theme" data-count="24"></span>
+                <span class="plus"></span>
+              </div>
+              <h5 class="title">hours of quick response time</h5>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-6">
+            <div class="fun_fact_item text-center">
+              <div class="fact_number">
+                <span class="odometer odometer-auto-theme" data-count="24"></span>
+                <span class="plus"></span>
+              </div>
+              <h5 class="title">years of combined experience</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Counter Section -->
+
+    <!-- start: Services Carousel -->
+    <section class="services-carousel-section" data-bg-image="./assets/images/bg/global-light-bg.png">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section_title style-2">
+              <h2 class="title wow fadeInUp" data-wow-delay=".3s">our recent repair services</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col">
+            <div class="services_carousel_wrap swiper swiper-container wow fadeInUp" data-wow-delay=".5s">
+              <div class="services_navigation text-end d-none d-md-inline-block">
+                <button class="icon_btn service_prev"><i class="flaticon-left-arrow"></i></button>
+                <button class="icon_btn service_next"><i class="flaticon-right-arrow"></i></button>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide service_carousel_item">
+                  <div class="service_img">
+                    <a href="service-details.html">
+                      <img src="./assets/images/services/service-ca-1.jpg" alt="ThemeShala">
+                    </a>
+                  </div>
+                  <div class="service_content">
+                    <h5 class="category"><a href="service-details.html">break repair</a></h5>
+                    <h4 class="title"><a href="service-details.html">mechanic repair break</a></h4>
+                    <a href="service-details.html" class="icon_btn service_btn"><i class="flaticon-right-arrow"></i></a>
+                  </div>
+                </div>
+                <div class="swiper-slide service_carousel_item">
+                  <div class="service_img">
+                    <a href="service-details.html">
+                      <img src="./assets/images/services/service-ca-2.jpg" alt="ThemeShala">
+                    </a>
+                  </div>
+                  <div class="service_content">
+                    <h5 class="category"><a href="service-details.html">tyre change</a></h5>
+                    <h4 class="title"><a href="service-details.html">replace car tyre</a></h4>
+                    <a href="service-details.html" class="icon_btn service_btn"><i class="flaticon-right-arrow"></i></a>
+                  </div>
+                </div>
+                <div class="swiper-slide service_carousel_item">
+                  <div class="service_img">
+                    <a href="service-details.html">
+                      <img src="./assets/images/Frame 11.jpg" alt="Smoke Test">
+                    </a>
+                  </div>
+                  <div class="service_content">
+                    <h5 class="category"><a href="service-details.html">engine test</a></h5>
+                    <h4 class="title"><a href="service-details.html">Found vaccuum leak with smoke</a></h4>
+                    <a href="service-details.html" class="icon_btn service_btn"><i class="flaticon-right-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="services_navigation text-center d-md-none">
+                <button class="icon_btn service_prev"><i class="flaticon-left-arrow"></i></button>
+                <button class="icon_btn service_next"><i class="flaticon-right-arrow"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Services Carousel -->
+
+    <!-- start: Query Section -->
+    <section class="query-section overflow-hidden" data-bg-image="./assets/images/bg/global-white-bg.png">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+
+            <div class="query_wrap" data-bg-image="./assets/images/bg/global-bg.png">
+              <div class="query_img wow fadeInUp" data-wow-delay=".7s">
+                <img src="./assets/images/query/query-img.png" alt="">
+              </div>
+
+              <div class="chat_counter">
+                <div class="fact_number">
+                  <span class="odometer odometer-auto-theme" data-count="25"></span>
+                  <span class="plus">+</span>
+                </div>
+                <h6 class="title">happy customer</h6>
+              </div>
+
+              <div class="query_form_wrap">
+                <div class="section_title">
+                  <h2 class="title wow fadeInUp" data-wow-delay=".3s">Need a quote?</h2>
+                </div>
+
+                <form id="contact_form" class="query_form wow fadeInRight" data-wow-delay=".5s">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form_group">
+                        <input type="text" name="firstName" id="firstName" placeholder="name*">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form_group">
+                        <input type="tel" name="conPhone" id="conPhone" placeholder="Phone*">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form_group">
+                        <input type="email" name="conEmail" id="conEmail" placeholder="email*">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form_group">
+                        <input type="text" name="conSubject" id="conSubject" placeholder="subject*">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form_group">
+                        <textarea name="conMessage" id="conMessage" placeholder="Message*"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form_button">
+                        <button type="submit" class="primary_btn form_btn">
+                          <span>send message</span>
+                          <span class="icon_box">
+                            <i class="fa-solid fa-arrow-right icon_first"></i>
+                            <i class="fa-solid fa-arrow-right icon_second"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Query Section -->
+
+    <!-- start: Contact Form Success Modal Message -->
+    <div class="modal" id="message_sent" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header alert-success">
+            <h5 class="modal-title">Message Sent Successfully</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Thank you for contacting us. We will get back to you shortly.<br>Have a great day!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end: Contact Form Success Modal Message -->
+
+    <!-- start: Contact Form Fail Modal Message -->
+    <div class="modal" id="message_fail" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header alert-danger">
+            <h5 class="modal-title">Error</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Oops! Something went wrong, please try again.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end: Contact Form Fail Modal Message End -->
+
+
+    
+
+    <!-- start: CTA Section -->
+    <section class="cta-section style-3" data-bg-image="./assets/images/bg/global-white-bg.png">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="cta_content_wrap">
+              <div class="section_title">
+                <h2 class="title wow fadeInUp" data-wow-delay=".3s">get estimate now</h2>
+                <div class="desc wow fadeInUp" data-wow-delay=".4s">
+                  <p>Fixing Cars, Finding Solutions</p>
+                </div>
+              </div>
+
+              <div class="cta_action wow fadeInRight" data-wow-delay=".5s">
+                <a href="#" class="primary_btn cta_btn">
+                  <span>get estimate</span>
+                  <span class="icon_box">
+                    <i class="fa-solid fa-arrow-right icon_first"></i>
+                    <i class="fa-solid fa-arrow-right icon_second"></i>
+                  </span>
+                </a>
+                <a href="tel:+13303339916" class="cta_phone">+1(330)333-9916</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: CTA Section -->
+  </main>
+
+  <!-- start: Footer Area -->
+  <footer class="footer-area footer-2" data-bg-image="./assets/images/bg/global-light-bg.png">
+    <!-- widget area -->
+    <div class="widgets_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_widget wp-nav-menu footer2_col_1">
+              <h5 class="widget_title">Services</h5>
+
+              <ul>
+                <li><a href="#">Check Engine</a></li>
+                <li><a href="#">Brake Repair</a></li>
+                <li><a href="#">Oil Change</a></li>
+                <li><a href="#">Steering & Suspension</a></li>
+                <li><a href="#">Tune Up</a></li>
+                <li><a href="#">Aftermarket Parts</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_widget ts_contact_info style-2 footer2_col_2">
+              <h5 class="widget_title">Contact info</h5>
+
+              <ul class="no-list">
+                <li>
+                  <div class="icon"><i class="flaticon-envelope"></i></div>
+                  <div class="content">
+                    <span class="label">email us</span>
+                    <a href="maito:info@starkautorepairs.com">info@starkautorepairs.com</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon"><i class="flaticon-phone-call"></i></div>
+                  <div class="content">
+                    <span class="label">phone no</span>
+                    <a href="tel:+1-330-333-9916">+1 (330) 333-9916</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon"><i class="flaticon-maps-and-flags"></i></div>
+                  <div class="content">
+                    <span class="label">Location</span>
+                    <p>2403 44th ST NW, Canton OH 44703</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <div class="footer_widget ts_newsletter footer2_col_3">
+              <h5 class="widget_title">Newsletter</h5>
+
+              <div class="desc">
+                <p>Signup for our monthly newsletter to get the latest news.</p>
+              </div>
+
+              <form action="index.html" class="newsletter_form style-2">
+                <div class="nform_group">
+                  <input type="email" name="nEmail" id="nEmail" placeholder="email here *">
+                </div>
+
+                <a href="#" class="primary_btn form_btn">
+                  <span>subscribe now</span>
+                  <span class="icon_box">
+                    <i class="fa-solid fa-arrow-right icon_first"></i>
+                    <i class="fa-solid fa-arrow-right icon_second"></i>
+                  </span>
+                </a>
+
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-sm-6">
+            <div class="footer_widget wp-nav-menu footer2_col_3">
+              <h5 class="widget_title">Explore</h5>
+
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">careers</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">genuine parts</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">newsletter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom area -->
+    <div class="bottom_area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="footer_bottom_wrap">
+              <!-- logo -->
+              <div class="footer_logo">
+                <a href="index.html" class="logo"><img src="./assets/images/logos/primary-logo.png" alt=""></a>
+              </div>
+
+              <!-- copyright text -->
+              <div class="copyright_text">
+                <p>Copyright &copy; 2024 <a target="_blank" href="#">STARK AUTO REPAIRS LLC</a>. All Rights Reserved</p>
+              </div>
+
+              <!-- socials -->
+              <ul class="no-list footer_socials">
+                <li><a href="https://facebook.com/starkautorepairs" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.yelp.com/biz/stark-auto-repairs-mobile-mechanic-canton-4" target="_blank"><i class="fa-brands fa-yelp"></i></a></li>
+                 </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end: Footer Area -->
+
+
+  <!-- JS here -->
+  <script src=" assets/js/jquery.min.js"></script>
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/smooth-scroll.js"></script>
+  <script src="assets/js/nice-select.js"></script>
+  <script src="assets/js/meanmenu.js"></script>
+  <script src="assets/js/backtotop.js"></script>
+  <script src="assets/js/venobox.min.js"></script>
+  <script src="assets/js/swiper-bundle.js"></script>
+  <script src="assets/js/appear.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/odometer.min.js"></script>
+  <script src="assets/js/validate.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
