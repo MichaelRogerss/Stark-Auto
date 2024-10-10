@@ -1,0 +1,205 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Services Carousel CSS
+----------------------------------------*/
+.services-carousel-section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background-color: var(--ts-color-theme-bg-dark);
+
+	.section_title {
+		max-width: 730px;
+		position: relative;
+		z-index: 2;
+
+		.title {
+			color: var(--ts-color-common-white);
+		}
+	}
+
+	@media #{$lg} {
+		.section_title {
+			max-width: 620px;
+		}
+	}
+	@media #{$md} {
+		padding-top: 100px;
+		padding-bottom: 100px;
+
+		.section_title {
+			max-width: 530px;
+		}
+	}
+	@media #{$xs, $sm} {
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+		.section_title {
+			max-width: 450px;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.services_carousel_wrap {
+	margin-top: -80px;
+	text-align: center;
+
+	.service_carousel_item {
+		max-width: 620px;
+		width: 100%;
+
+		.service_img {
+			margin-bottom: 0;
+			> a {
+				position: relative;
+				border-radius: 10px;
+				overflow: hidden;
+				display: inline-block;
+				z-index: 1;
+
+				&::after {
+					position: absolute;
+					content: "";
+					top: 0;
+					left: -75%;
+					z-index: 1;
+					display: block;
+					width: 50%;
+					height: 100%;
+					background: linear-gradient(
+						to right,
+						rgba(255, 255, 255, 0) 0%,
+						rgba(255, 255, 255, 0.3) 100%
+					);
+					transform: skewX(-25deg);
+				}
+				&:hover {
+					&::after {
+						animation: shine 800ms;
+					}
+				}
+			}
+			img {
+				border-radius: 10px;
+				max-width: 100%;
+				@include transition(all 1s ease);
+			}
+		}
+
+		.service_content {
+			margin-top: 40px;
+
+			.category {
+				text-transform: uppercase;
+				font-weight: var(--ts-fw-bold);
+				color: var(--ts-color-theme-secondary);
+				margin-bottom: 10px;
+
+				a {
+					display: inline-block;
+					&:hover {
+						color: var(--ts-color-theme-primary);
+					}
+				}
+			}
+			.title {
+				margin: 0;
+				text-transform: uppercase;
+				font-weight: var(--ts-fw-ebold);
+				color: var(--ts-color-common-white);
+
+				a {
+					&:hover {
+						color: var(--ts-color-theme-primary);
+					}
+				}
+			}
+			.service_btn {
+				margin-top: 25px;
+				border-color: var(--ts-color-grey-1);
+				background-color: var(--ts-color-grey-1);
+				color: var(--ts-color-grey-2);
+
+				&:hover {
+					background-color: var(--ts-color-theme-primary);
+					border-color: var(--ts-color-theme-primary);
+				}
+			}
+		}
+
+		&:hover {
+			.service_img {
+				img {
+					@include transform(scale(1.12));
+				}
+			}
+		}
+	}
+	.services_navigation {
+		max-width: 1320px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 15px 110px 15px;
+
+		.icon_btn {
+			border-color: var(--ts-color-grey-1);
+			background-color: var(--ts-color-grey-1);
+			color: var(--ts-color-grey-2);
+
+			&:hover {
+				background-color: var(--ts-color-theme-primary);
+				border-color: var(--ts-color-theme-primary);
+			}
+		}
+	}
+
+	@media #{$xl} {
+		.service_carousel_item {
+			max-width: 550px;
+		}
+	}
+	@media #{$lg} {
+		margin-top: -50px;
+		.service_carousel_item {
+			max-width: 500px;
+		}
+		.services_navigation {
+			padding: 0 15px 80px 15px;
+		}
+	}
+	@media #{$md} {
+		margin-top: -50px;
+		.service_carousel_item {
+			max-width: 400px;
+		}
+		.services_navigation {
+			padding: 0 15px 70px 15px;
+		}
+	}
+	@media #{$sm, $xs} {
+		margin-top: 0;
+		.service_carousel_item {
+			max-width: 350px;
+
+			.service_content {
+				margin-top: 30px;
+
+				.service_btn {
+					margin-top: 20px;
+				}
+			}
+		}
+		.services_navigation {
+			padding: 50px 15px 0 15px;
+			display: inline-flex;
+			justify-content: center;
+			gap: 10px;
+		}
+	}
+	@media #{$xs} {
+	}
+}
+/* !END: Services Carousel CSS */

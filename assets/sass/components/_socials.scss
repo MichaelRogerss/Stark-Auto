@@ -1,0 +1,143 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Socials CSS
+----------------------------------------*/
+.ts_socials {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 15px;
+	margin-left: 5px;
+
+	li {
+		display: inline-flex;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 45px;
+			height: 45px;
+			background-color: var(--ts-color-grey-1);
+			font-size: 20px;
+			line-height: 1;
+			color: var(--ts-color-common-white);
+			transform: skew(10deg);
+			border-radius: 5px;
+
+			i {
+				display: inline-flex;
+				line-height: 1;
+				transition: none;
+				transform: skew(-10deg);
+			}
+
+			&:hover {
+				background-color: var(--ts-color-theme-primary);
+
+				i {
+					color: var(--ts-color-common-white);
+				}
+			}
+		}
+	}
+
+	&.style-2 {
+		display: inline-flex;
+		gap: 0;
+		margin-left: 0;
+
+		li {
+			position: relative;
+
+			&:not(:last-child) {
+				padding-right: 30px;
+				margin-right: 10px;
+
+				&::after {
+					@include theme-afbf;
+					right: 0;
+					top: 50%;
+					height: 1px;
+					width: 20px;
+					transform: translateY(-50%);
+					background-color: var(--ts-color-common-white);
+					opacity: 0.5;
+				}
+			}
+			a {
+				width: auto;
+				height: auto;
+				transform: skew(0);
+				border-radius: 0;
+				background-color: transparent;
+				opacity: 0.5;
+
+				i {
+					transform: skew(0);
+				}
+
+				&:hover {
+					opacity: 1;
+
+					i {
+						color: var(--ts-color-theme-secondary);
+					}
+				}
+			}
+
+			@media #{$xs, $sm} {
+				li {
+					&:not(:last-child) {
+						padding-right: 20px;
+						margin-bottom: 5px;
+
+						&::after {
+							width: 15px;
+						}
+					}
+				}
+			}
+		}
+		&.vertical {
+			flex-direction: column;
+
+			li {
+				&:not(:last-child) {
+					padding-right: 0;
+					margin-right: 0;
+					padding-bottom: 40px;
+					margin-bottom: 10px;
+
+					&::after {
+						right: auto;
+						top: auto;
+						left: 50%;
+						bottom: 0;
+						width: 1px;
+						height: 30px;
+						transform: translateX(-50%) translateY(0);
+					}
+				}
+			}
+
+			@media #{$xs, $sm} {
+				li {
+					&:not(:last-child) {
+						padding-bottom: 20px;
+						margin-bottom: 5px;
+
+						&::after {
+							height: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* !END: Socials CSS */

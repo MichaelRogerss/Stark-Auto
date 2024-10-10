@@ -1,0 +1,316 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Teams CSS
+----------------------------------------*/
+.team-section {
+	padding-top: 120px;
+	position: relative;
+	z-index: 1;
+
+	.section_title {
+		margin-bottom: 60px;
+		max-width: 580px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.page {
+		padding-bottom: 70px;
+		.single_team {
+			margin-bottom: 50px;
+		}
+	}
+
+	.bg_shape_left,
+	.bg_shape_right {
+		@include theme-afbf;
+		top: 0;
+		z-index: -1;
+		opacity: 0.5;
+	}
+	.bg_shape_left {
+		left: 0;
+		width: 25%;
+	}
+	.bg_shape_right {
+		right: 0;
+		width: 40%;
+	}
+
+	@media #{$md} {
+		padding-top: 100px;
+		&.page {
+			padding-bottom: 50px;
+		}
+
+		.section_title {
+			max-width: 470px;
+		}
+	}
+	@media #{$xs, $sm} {
+		padding-top: 80px;
+
+		&.page {
+			padding-bottom: 30px;
+		}
+		.section_title {
+			margin-bottom: 40px;
+			max-width: 400px;
+		}
+	}
+}
+
+.single_team {
+	display: inline-block;
+	max-width: 416px;
+	width: 100%;
+	margin-bottom: 30px;
+
+	.team_img {
+		position: relative;
+		z-index: 1;
+
+		&::after {
+			@include theme-afbf;
+			left: 50%;
+			bottom: 0;
+			width: 93%;
+			height: 80%;
+			background-color: var(--ts-color-theme-bg);
+			@include transform(translateX(-50%) skewX(-5deg));
+			border-radius: 10px;
+			z-index: -1;
+			background-image: url(../images/bg/global-bg.png);
+			@include background;
+			@include transition(all 0.4s ease-in-out 0s);
+		}
+	}
+
+	.team_content {
+		margin-top: 25px;
+		text-align: center;
+
+		.name {
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: var(--ts-fw-black);
+
+			a {
+				&:hover {
+					color: var(--ts-color-theme-primary);
+				}
+			}
+		}
+		.designation {
+			display: block;
+			color: var(--ts-color-text-body);
+			margin-top: 5px;
+		}
+		.socials {
+			list-style: none;
+			padding: 21px 0 0 0;
+			margin: 10px 0 0 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 15px;
+			position: relative;
+			z-index: 1;
+
+			&::after {
+				@include theme-afbf;
+				top: 0;
+				left: 50%;
+				width: 75%;
+				height: 1px;
+				background-color: var(--ts-color-border-1);
+				@include transform(translateX(-50%));
+				z-index: 1;
+			}
+
+			li {
+				a {
+					display: flex;
+					font-size: 20px;
+					line-height: 1;
+
+					&:hover {
+						i {
+							color: var(--ts-color-theme-primary);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&:hover {
+		.team_img {
+			&::after {
+				background-color: var(--ts-color-theme-secondary);
+			}
+		}
+	}
+
+	@media #{$sm, $xs} {
+		display: block;
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+// team details
+.member_info {
+	list-style: none;
+
+	li {
+		@include flexbox();
+		align-items: center;
+		font-size: 18px;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid var(--ts-color-border-secondary);
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+		}
+
+		.info_title {
+			display: inline-block;
+			position: relative;
+			font-weight: 500;
+			color: var(--ts-color-heading-primary);
+			min-width: 165px;
+			margin-right: 12px;
+
+			&::after {
+				content: ":";
+				position: absolute;
+				right: 0;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		}
+
+		a {
+			&:hover {
+				color: var(--ts-color-theme-primary);
+			}
+		}
+
+		@media #{$xs} {
+			font-size: 16px;
+
+			.info_title {
+				min-width: 115px;
+			}
+		}
+	}
+}
+
+.team-details-area {
+	padding-top: 120px;
+
+	@media #{$md} {
+		padding-top: 100px;
+	}
+	@media #{$sm} {
+		padding-top: 80px;
+	}
+	@media #{$xs} {
+		padding-top: 60px;
+	}
+
+	.member_image {
+		margin-bottom: 30px;
+		position: relative;
+		z-index: 1;
+
+		&::after {
+			position: absolute;
+			content: "";
+			left: 50%;
+			bottom: 0;
+			width: 93%;
+			height: 80%;
+			background-color: var(--ts-color-theme-bg);
+			-webkit-transform: translateX(-50%) skewX(-5deg);
+			-ms-transform: translateX(-50%) skewX(-5deg);
+			transform: translateX(-50%) skewX(-5deg);
+			border-radius: 10px;
+			z-index: -1;
+			background-image: url(../images/bg/global-bg.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			-webkit-transition: all 0.4s ease-in-out 0s;
+			transition: all 0.4s ease-in-out 0s;
+		}
+
+		@media #{$sm, $md} {
+			max-width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.ts_socials {
+		margin-top: 40px;
+
+		@media #{$xs} {
+			margin-top: 30px;
+		}
+	}
+
+	.member_details {
+		margin-bottom: 30px;
+		margin-left: 20px;
+
+		@media #{$md, $sm, $xs} {
+			margin-left: 0px;
+		}
+
+		.name {
+			font-size: 35px;
+			text-transform: uppercase;
+			font-weight: var(--ts-fw-ebold);
+			margin-bottom: 30px;
+
+			@media #{$sm} {
+				font-size: 30px;
+			}
+			@media #{$xs} {
+				font-size: 25px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.member_summery {
+		.title {
+			text-transform: uppercase;
+			font-weight: var(--ts-fw-ebold);
+			font-size: 35px;
+			margin-bottom: 20px;
+
+			@media #{$sm} {
+				font-size: 30px;
+			}
+			@media #{$xs} {
+				font-size: 25px;
+			}
+		}
+		.desc {
+			p {
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+/* !END: Teams CSS */

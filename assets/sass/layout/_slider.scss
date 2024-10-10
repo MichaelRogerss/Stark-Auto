@@ -1,0 +1,369 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Slider CSS
+----------------------------------------*/
+.hero_slider {
+	.slider_item {
+		min-height: 930px;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+
+		@media #{$xxl} {
+			min-height: 800px;
+		}
+		@media #{$xl} {
+			min-height: 700px;
+		}
+		@media #{$lg} {
+			min-height: 650px;
+		}
+		@media #{$md} {
+			min-height: 600px;
+		}
+		@media #{$sm, $xs} {
+			min-height: 550px;
+		}
+
+		.container,
+		.container-lg,
+		.container-md,
+		.container-sm,
+		.container-xl,
+		.container-xxl {
+			max-width: 1720px;
+			position: relative;
+		}
+
+		.slider_bg {
+			@include theme-afbf;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			@include background;
+			z-index: -1;
+			@include transform(scale(1));
+			@include transition(
+				transform 9000ms ease,
+				opacity 1500ms ease-in,
+				-webkit-transform 9000ms ease
+			);
+
+			&::after {
+				@include theme-afbf;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: var(--ts-color-grey-4);
+				opacity: 0.65;
+			}
+		}
+
+		.slider_content {
+			max-width: 1075px;
+			width: 100%;
+			margin: auto;
+			text-align: center;
+			margin-top: 50px;
+
+			.hero_socials {
+				position: absolute;
+				left: 15px;
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: 2;
+			}
+
+			.title {
+				text-transform: uppercase;
+				color: var(--ts-color-common-white);
+				font-weight: var(--ts-fw-ebold);
+				margin: 0;
+
+				span {
+					background-image: linear-gradient(
+						90deg,
+						var(--ts-color-theme-primary) 40%,
+						var(--ts-color-theme-primary) 50%,
+						transparent 50%,
+						transparent 50%,
+						var(--ts-color-theme-secondary) 50%
+					);
+					background-clip: text;
+					-webkit-background-clip: text;
+					color: transparent;
+				}
+			}
+			.desc {
+				text-transform: uppercase;
+				font-size: 20px;
+				line-height: 1.5;
+				font-family: var(--ts-ff-heading);
+				font-weight: var(--ts-fw-sbold);
+				color: var(--ts-color-common-white);
+				margin-top: 15px;
+
+				p {
+					&:last-child {
+						margin: 0;
+					}
+				}
+			}
+			.hero_button {
+				margin-top: 30px;
+			}
+
+			@media #{$xl} {
+				max-width: 950px;
+			}
+			@media #{$lg} {
+				max-width: 780px;
+			}
+			@media #{$md} {
+				max-width: 670px;
+			}
+			@media #{$sm} {
+				max-width: 470px;
+
+				.desc {
+					font-size: 18px;
+				}
+			}
+			@media #{$xs} {
+				max-width: 300px;
+				.title {
+					font-size: 35px;
+				}
+				.desc {
+					font-size: 16px;
+					margin-top: 10px;
+				}
+				.hero_button {
+					margin-top: 20px;
+				}
+			}
+		}
+		&.swiper-slide {
+			.hero_socials {
+				display: block;
+				overflow: hidden;
+
+				.ts_socials {
+					opacity: 0;
+					@include transform(translateX(-100px));
+					@include transition(1s);
+				}
+			}
+			.hero_title {
+				display: block;
+				overflow: hidden;
+				.title {
+					position: relative;
+					display: block;
+					opacity: 0;
+					@include transform(translateY(200px));
+					@include transition(1s);
+				}
+			}
+			.desc {
+				display: block;
+				overflow: hidden;
+
+				> div {
+					position: relative;
+					display: block;
+					opacity: 0;
+					@include transform(translateY(200px));
+					@include transition(1s);
+				}
+			}
+			.hero_button {
+				display: block;
+				overflow: hidden;
+				> div {
+					opacity: 0;
+					@include transform(translateY(200px));
+					@include transition(1s);
+				}
+			}
+		}
+
+		&.swiper-slide-active {
+			.slider_bg {
+				@include transform(scale(1.1));
+			}
+			.hero_socials .ts_socials {
+				opacity: 1;
+				@include transform(translateX(0));
+			}
+			.hero_title > .title,
+			.desc > div,
+			.hero_button > div {
+				opacity: 1;
+				@include transform(translateY(0));
+			}
+		}
+	}
+
+	.slider_navigation {
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		position: absolute;
+		top: 50%;
+		right: 6%;
+		transform: translateY(-50%);
+		z-index: 2;
+
+		@media #{$xs, $sm, $md, $lg, $xl, $xxl, $xxxl} {
+			right: 15px;
+		}
+		.nav {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			width: 60px;
+			height: 60px;
+			background-color: var(--ts-color-border-4);
+			border-radius: 50%;
+			font-size: 20px;
+			line-height: 1;
+			cursor: pointer;
+			color: var(--ts-color-border-1);
+
+			i {
+				display: inline-flex;
+				line-height: 1;
+			}
+
+			&:hover {
+				i {
+					color: var(--ts-color-theme-secondary);
+				}
+			}
+		}
+
+		@media #{$lg, $md} {
+			.nav {
+				width: 55px;
+				height: 55px;
+			}
+		}
+	}
+	.slider_pagination {
+		display: inline-flex;
+		flex-direction: column;
+		gap: 10px;
+		position: absolute;
+		left: auto;
+		bottom: auto;
+		width: auto;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+
+		.swiper-pagination-bullet {
+			width: 24px;
+			height: 24px;
+			border: 1px solid transparent;
+			background-color: transparent;
+			opacity: 0.5;
+			position: relative;
+			z-index: 1;
+			margin: 0;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				@include transform(translate(-50%, -50%));
+				width: 10px;
+				height: 10px;
+				background-color: var(--ts-color-theme-secondary);
+				border-radius: 50%;
+			}
+			&.swiper-pagination-bullet-active {
+				border-color: var(--ts-color-theme-secondary);
+				opacity: 1;
+			}
+		}
+	}
+
+	&.style-2 {
+		.slider_item {
+			min-height: 800px;
+			.slider_content {
+				.desc {
+					margin-top: 0;
+					margin-bottom: 15px;
+				}
+				.title {
+					span {
+						font-weight: var(--ts-fw-sbold);
+						font-style: italic;
+						background-clip: inherit;
+						-webkit-background-clip: inherit;
+						color: var(--ts-color-theme-secondary);
+						background-image: none;
+						background: transparent;
+					}
+				}
+			}
+
+			@media #{$xl} {
+				min-height: 650px;
+			}
+			@media #{$lg} {
+				min-height: 600px;
+			}
+			@media #{$md} {
+				min-height: 550px;
+			}
+			@media #{$sm, $xs} {
+				min-height: 500px;
+				.slider_content {
+					max-width: 530px;
+					padding-right: 25px;
+
+					.title {
+						font-size: 45px;
+					}
+				}
+			}
+			@media #{$xs} {
+				min-height: 500px;
+				.slider_content {
+					max-width: 350px;
+					padding-right: 25px;
+
+					.title {
+						font-size: 40px;
+					}
+				}
+			}
+		}
+
+		.slider_navigation {
+			&.style-2 {
+				&.prev {
+					right: auto;
+					left: 6%;
+				}
+
+				@media #{$xs, $sm, $md, $lg, $xl, $xxl, $xxxl} {
+					&.prev {
+						left: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+/* !END: Slider CSS */

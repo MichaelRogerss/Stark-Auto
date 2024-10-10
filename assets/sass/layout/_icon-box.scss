@@ -1,0 +1,41 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Icon Box CSS
+----------------------------------------*/
+.icon_box {
+	display: inline-block;
+	max-width: 250px;
+	width: 100%;
+	text-align: center;
+
+	.icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 80px;
+		height: 80px;
+		border-radius: 20px;
+		background-color: var(--ts-color-theme-primary);
+		font-size: 35px;
+		line-height: 1;
+		color: var(--ts-color-common-white);
+		margin-bottom: 30px;
+	}
+	.content {
+		.title {
+			text-transform: uppercase;
+			font-weight: var(--ts-fw-ebold);
+			margin: 0;
+		}
+		.desc {
+			margin-top: 15px;
+			p {
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+/* !END: Icon Box CSS */

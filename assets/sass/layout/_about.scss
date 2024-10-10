@@ -1,0 +1,355 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: About CSS
+----------------------------------------*/
+.about-section {
+	padding-bottom: 120px;
+
+	&.style-2 {
+		background-color: var(--ts-color-theme-bg-dark-2);
+
+		padding-top: 120px;
+
+		&.page {
+			background-color: var(--ts-color-common-white);
+		}
+	}
+	&.style-3 {
+		padding-top: 120px;
+		padding-bottom: 0;
+	}
+	&.page {
+		padding-top: 120px;
+	}
+
+	@media #{$md} {
+		padding-bottom: 100px;
+
+		&.style-3,
+		&.style-2 {
+			padding-top: 100px;
+		}
+		&.page {
+			padding-top: 100px;
+		}
+	}
+	@media #{$sm, $xs} {
+		padding-bottom: 80px;
+
+		&.style-3,
+		&.style-2 {
+			padding-top: 80px;
+		}
+		&.page {
+			padding-top: 80px;
+		}
+	}
+}
+.about_content {
+	.section_title {
+		margin-bottom: 35px;
+	}
+	.button {
+		margin-top: 40px;
+	}
+
+	&.right {
+		padding-left: 35px;
+
+		.section_title {
+			max-width: 601px;
+			width: 100%;
+		}
+	}
+	&.left {
+		.section_title {
+			max-width: 540px;
+			width: 100%;
+		}
+	}
+
+	@media #{$xl, $lg, $md, $sm, $xs} {
+		&.right {
+			padding-left: 0;
+			margin-bottom: 50px;
+		}
+	}
+	@media #{$xs} {
+		.section_title {
+			margin-bottom: 30px;
+		}
+		.button {
+			margin-top: 30px;
+		}
+	}
+
+	&.style-2 {
+		.section_title {
+			margin-bottom: 0;
+			.title {
+				color: var(--ts-color-common-white);
+			}
+			.desc {
+				color: var(--ts-color-grey-2);
+			}
+		}
+		.about_quote {
+			margin-top: 30px;
+		}
+		.buttons {
+			margin-top: 50px;
+			column-gap: 40px;
+			row-gap: 20px;
+		}
+
+		&.page {
+			.section_title {
+				.title {
+					color: var(--ts-color-heading-primary);
+				}
+				.desc {
+					color: var(--ts-color-text-body);
+				}
+			}
+			.about_quote {
+				color: var(--ts-color-heading-primary);
+				&::after {
+					background-color: var(--ts-color-theme-bg);
+				}
+				&::before {
+					color: var(--ts-color-grey-1);
+				}
+			}
+			.author_info {
+				.name {
+					color: var(--ts-color-heading-primary);
+				}
+				.designation {
+					color: var(--ts-color-text-body);
+				}
+			}
+		}
+
+		@media #{$sm} {
+			.about_quote {
+				margin-top: 20px;
+			}
+			.buttons {
+				margin-top: 30px;
+			}
+		}
+		@media #{$xs} {
+			.about_quote {
+				margin-top: 15px;
+			}
+			.buttons {
+				margin-top: 25px;
+				column-gap: 30px;
+			}
+		}
+	}
+}
+.about_quote {
+	position: relative;
+	font-size: 18px;
+	font-family: var(--ts-ff-heading);
+	font-weight: var(--ts-fw-ebold);
+	text-transform: uppercase;
+	color: var(--ts-color-grey-2);
+	padding: 45px 90px 45px 40px;
+	z-index: 1;
+	overflow: hidden;
+
+	&::before {
+		content: "\f109";
+		font-family: var(--ts-ff-flaticon);
+		font-weight: var(--ts-fw-normal);
+		font-size: 75px;
+		line-height: 1;
+		display: inline-flex;
+		color: var(--ts-color-common-white);
+		position: absolute;
+		right: 10%;
+		top: 50%;
+		transform: translateY(-50%);
+		opacity: 0.1;
+	}
+
+	&::after {
+		@include theme-afbf;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--ts-color-grey-5);
+		mask-image: url(../images/shapes/about-quote-shape.svg);
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		z-index: -1;
+	}
+
+	@media #{$xxl} {
+		padding: 35px 105px 35px 30px;
+
+		&::before {
+			right: 20%;
+		}
+	}
+	@media #{$xl} {
+		padding: 30px 60px 30px 20px;
+	}
+	@media #{$lg} {
+		padding: 30px 50px 30px 20px;
+		font-size: 15px;
+		&::before {
+			font-size: 70px;
+		}
+	}
+	@media #{$sm} {
+		padding: 30px 60px 30px 20px;
+		font-size: 16px;
+
+		&::before {
+			font-size: 60px;
+		}
+	}
+	@media #{$xs} {
+		padding: 25px 30px 25px 15px;
+		font-size: 12px;
+
+		&::before {
+			right: 8%;
+			font-size: 50px;
+		}
+	}
+}
+
+.about_img {
+	position: relative;
+	img {
+		max-width: 800px;
+		width: 100%;
+	}
+
+	&.left {
+		margin-left: -140px;
+	}
+	&.right {
+		margin-right: -140px;
+	}
+
+	@media #{$xxl} {
+		&.left {
+			margin-left: -70px;
+		}
+		&.right {
+			margin-right: -70px;
+		}
+	}
+	@media #{$xl, $lg, $md, $sm, $xs} {
+		img {
+			max-width: 100%;
+		}
+		&.left {
+			margin-left: 0px;
+		}
+		&.right {
+			margin-right: 0px;
+		}
+	}
+
+	@media #{$md, $sm} {
+		margin-bottom: 40px;
+	}
+	@media #{$xs} {
+		margin-bottom: 30px;
+	}
+
+	&.style-2 {
+		right: -100px;
+		margin-right: -100px;
+
+		@media #{$xxxl} {
+			margin-right: 0;
+		}
+		@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+			right: 0;
+			margin-right: 0;
+		}
+	}
+
+	&.style-3 {
+		max-width: 595px;
+		width: 100%;
+		z-index: 1;
+		margin-top: 15px;
+
+		&::after {
+			@include theme-afbf;
+			right: 25px;
+			top: -15px;
+			width: 100%;
+			height: 100%;
+			background-color: var(--ts-color-theme-secondary);
+			border-radius: 10px;
+			@include transform(skewX(-10deg));
+			z-index: -1;
+		}
+
+		img {
+			max-width: 100%;
+			border-radius: 10px;
+		}
+
+		@media #{$md, $sm, $xs} {
+			max-width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media #{$xs} {
+			&::after {
+				top: -10px;
+				right: 10px;
+			}
+		}
+	}
+	&.style-4 {
+		max-width: 890px;
+		margin-left: -49%;
+		padding-bottom: 80px;
+		margin-right: 50px;
+
+		&::after {
+			@include theme-afbf;
+			right: 15%;
+			top: 0;
+			width: 10px;
+			height: 80px;
+			background-color: var(--ts-color-theme-primary);
+		}
+
+		.bottom_img {
+			width: 80%;
+		}
+		.top_img {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 55%;
+			z-index: 1;
+			padding: 10px 0 0 10px;
+			background-color: var(--ts-color-common-white);
+		}
+
+		@media #{$xxl, $xl, $lg} {
+			margin-right: 0;
+			margin-left: -39%;
+		}
+		@media #{$md, $sm, $xs} {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+}
+/* !END: About CSS */

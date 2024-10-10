@@ -1,0 +1,434 @@
+@use "../utilities" as *;
+
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Fixton - Auto Repair Services HTML5 Template
+    Author: ThemeShala
+    Support: support@themeshala.com
+    Description: Fixton - Auto Repair Services HTML5 Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+
+/************ TABLE OF CONTENTS ***************
+
+  Theme Default CSS
+	Animation CSS
+	Search Popup CSS
+	Preloader CSS
+	Theme Header CSS
+	Theme Footer CSS
+	Contact Info CSS
+	Newsletter CSS
+	Socials CSS
+	OffCanvas CSS
+	Sidebar CSS
+	Section Title CSS
+	Breadcrumb CSS
+	Sidebar Widgets CSS
+	Hero CSS
+	Slider CSS
+	Feature CSS
+	Icon Box CSS
+	Services CSS
+	Services Carousel CSS
+	Service Details CSS
+	About CSS
+	List CSS
+	Brands CSS
+	FAQ CSS
+	Fun Fact CSS
+	Pricing CSS
+	Testimonial CSS
+	Blog CSS
+	CTA CSS
+	Author CSS
+	Shaped Image CSS
+	Query CSS
+	Form CSS
+	Teams CSS
+	Join Team CSS
+	Video CSS
+	Project CSS
+	Blog Details CSS
+	Contact CSS
+	Error Page CSS
+
+**********************************************/
+
+/**----------------------------------------
+START: Theme Default CSS
+----------------------------------------*/
+@import url($font-url);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	position: relative;
+}
+.site-content {
+	overflow: hidden;
+}
+
+/**
+  Typography CSS
+*/
+body {
+	font-family: var(--ts-ff-body);
+	font-size: var(--ts-fs-body);
+	font-weight: var(--ts-fw-regular);
+	color: var(--ts-color-text-body);
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--ts-ff-heading);
+	color: var(--ts-color-heading-primary);
+	margin-top: 0px;
+	font-weight: var(--ts-fw-sbold);
+	line-height: 1.2;
+	@include transition(all 0.3s ease-in-out 0s);
+}
+
+h1 {
+	font-size: var(--ts-fs-h1);
+
+	@media #{$xl} {
+		font-size: 70px;
+	}
+	@media #{$lg} {
+		font-size: 58px;
+	}
+	@media #{$md} {
+		font-size: 50px;
+	}
+	@media #{$sm} {
+		font-size: 50px;
+	}
+	@media #{$xs} {
+		font-size: 40px;
+	}
+}
+
+h2 {
+	font-size: var(--ts-fs-h2);
+
+	@media #{$xl} {
+		font-size: 50px;
+	}
+	@media #{$lg} {
+		font-size: 45px;
+	}
+	@media #{$md} {
+		font-size: 40px;
+	}
+	@media #{$sm} {
+		font-size: 35px;
+	}
+	@media #{$xs} {
+		font-size: 30px;
+	}
+}
+
+h3 {
+	font-size: var(--ts-fs-h3);
+
+	@media #{$xl} {
+		font-size: 42px;
+	}
+	@media #{$lg} {
+		font-size: 40px;
+	}
+	@media #{$md} {
+		font-size: 35px;
+	}
+	@media #{$sm} {
+		font-size: 30px;
+	}
+	@media #{$xs} {
+		font-size: 25px;
+	}
+}
+
+h4 {
+	font-size: var(--ts-fs-h4);
+
+	@media #{$lg} {
+		font-size: 22px;
+	}
+	@media #{$md} {
+		font-size: 20px;
+	}
+	@media #{$sm, $xs} {
+		font-size: 18px;
+	}
+}
+
+h5 {
+	font-size: var(--ts-fs-h5);
+
+	@media #{$md} {
+		font-size: 17px;
+	}
+	@media #{$sm, $xs} {
+		font-size: 16px;
+	}
+}
+
+h6 {
+	font-size: var(--ts-fs-h6);
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	font-size: inherit;
+	color: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	display: inline-block;
+}
+
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a,
+h5:hover a,
+h6:hover a {
+	font-size: inherit;
+	color: inherit;
+	font-weight: inherit;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+a,
+.btn,
+button,
+p,
+input,
+select,
+textarea,
+li,
+img,
+svg path,
+*::after,
+*::before,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include transition(all 0.3s ease-in-out 0s);
+}
+i {
+	display: inline-flex;
+	line-height: 1;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+a,
+button {
+	color: inherit;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:focus,
+button:focus:not(:focus-visible) {
+	outline: 0;
+	box-shadow: 0 0 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+select,
+.nice-select,
+input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+textarea {
+	outline: none;
+	background-color: var(--ts-color-common-white);
+	height: auto;
+	width: 100%;
+	font-size: var(--ts-fs-body);
+	border: 1px solid var(--ts-color-common-black);
+	color: var(--ts-color-common-black);
+	padding: 10px 15px;
+}
+
+input[type="color"] {
+	appearance: none;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	border-radius: 50%;
+}
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--ts-color-theme-primary) var(--ts-color-grey-1);
+}
+::-webkit-scrollbar {
+	height: 4px;
+	width: 6px;
+	background: var(--ts-color-grey-1);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--ts-color-theme-primary);
+	-webkit-border-radius: 1ex;
+	-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+*::-moz-selection {
+	background: var(--ts-color-common-black);
+	color: var(--ts-color-common-white);
+	text-shadow: none;
+}
+::-moz-selection {
+	background: var(--ts-color-common-black);
+	color: var(--ts-color-common-white);
+	text-shadow: none;
+}
+::selection {
+	background: var(--ts-color-common-black);
+	color: var(--ts-color-common-white);
+	text-shadow: none;
+}
+
+* {
+	@include placeholder {
+		color: var(--ts-color-common-black);
+		font-size: var(--ts-fs-body);
+		opacity: 1;
+	}
+}
+
+/**
+ 	Common Classes CSS
+*/
+img {
+	max-width: 100%;
+}
+.w-img {
+	& img {
+		width: 100%;
+	}
+}
+.m-img {
+	& img {
+		max-width: 100%;
+	}
+}
+.fix {
+	overflow: hidden;
+}
+.no-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+section,
+.section-padding {
+	position: relative;
+}
+.section-padding {
+	padding-top: 120px;
+	padding-bottom: 90px;
+
+	@media #{$md} {
+		padding-top: 100px;
+		padding-bottom: 70px;
+	}
+	@media #{$xs, $sm} {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+}
+
+// back to top
+@media #{$sm} {
+	.progress-wrap {
+		right: 20px;
+	}
+}
+@media #{$xs} {
+	.progress-wrap {
+		right: 15px;
+	}
+	.progress-wrap.active-progress {
+		bottom: 15px;
+	}
+}
+
+/**
+ 	WP Admin Bar CSS
+*/
+.admin-bar {
+	header {
+		&.sticky {
+			margin-top: 32px;
+		}
+		@media #{$wp-sm} {
+			&.sticky {
+				margin-top: 46px;
+			}
+		}
+		@media #{$wp-xs} {
+			&.sticky {
+				margin-top: 0;
+			}
+			&.header-absolute {
+				margin-top: 46px;
+			}
+		}
+	}
+}

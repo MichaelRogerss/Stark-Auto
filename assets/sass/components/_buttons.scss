@@ -1,0 +1,141 @@
+@use "../utilities" as *;
+
+/**
+  Buttons CSS
+*/
+.primary_btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	font-family: var(--ts-ff-heading);
+	font-size: 13px;
+	font-weight: var(--ts-fw-ebold);
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 21px 28px;
+	background-color: var(--ts-color-theme-primary);
+	color: var(--ts-color-common-white);
+	border-radius: 5px;
+	@include transform(skewX(10deg));
+	@include transition(all 0.3s ease-in-out 0s);
+
+	> span {
+		@include transform(skewX(-10deg));
+	}
+
+	.icon_box {
+		position: relative;
+		display: inline-flex;
+		width: auto;
+		overflow: hidden;
+		padding: 0 4px;
+		transform: rotate(-45deg);
+
+		.icon_first,
+		.icon_second {
+			display: inline-flex;
+			line-height: 1;
+			@include transition(all 0.3s ease-in-out 0s);
+			color: var(--ts-color-common-white);
+		}
+		.icon_second {
+			position: absolute;
+			transform: translateX(-150%);
+			color: var(--ts-color-common-black);
+		}
+	}
+
+	&:hover {
+		background-color: var(--ts-color-theme-secondary);
+		color: var(--ts-color-common-black);
+
+		.icon_box {
+			.icon_first {
+				transform: translateX(150%);
+			}
+			.icon_second {
+				transform: translateX(0%);
+			}
+		}
+	}
+
+	@media #{$xs} {
+		padding: 18px 22px;
+	}
+}
+.icon_btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	border: 1px solid var(--ts-color-text-body);
+	color: var(--ts-color-text-body);
+	border-radius: 5px;
+	min-width: 55px;
+	font-size: 22px;
+	line-height: 1;
+	padding: 3px 5px;
+	transform: skewX(10deg);
+
+	i {
+		transform: skewX(-10deg);
+		display: inline-flex;
+		line-height: 1;
+	}
+
+	&:hover {
+		background-color: var(--ts-color-theme-primary);
+		border-color: var(--ts-color-theme-primary);
+
+		i {
+			color: var(--ts-color-common-white);
+		}
+	}
+}
+.inline_btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	font-size: 14px;
+	line-height: 1;
+	font-family: var(--ts-ff-heading);
+	font-weight: var(--ts-fw-ebold);
+	color: var(--ts-color-text-body);
+	text-transform: uppercase;
+
+	.icon_box {
+		position: relative;
+		display: inline-flex;
+		width: auto;
+		overflow: hidden;
+		padding: 0 4px;
+		transform: rotate(-45deg);
+
+		.icon_first,
+		.icon_second {
+			display: inline-flex;
+			line-height: 1;
+			@include transition(all 0.3s ease-in-out 0s);
+			color: var(--ts-color-text-body);
+		}
+		.icon_second {
+			position: absolute;
+			transform: translateX(-150%);
+			color: var(--ts-color-theme-primary);
+		}
+	}
+
+	&:hover {
+		color: var(--ts-color-theme-primary);
+
+		.icon_box {
+			.icon_first {
+				transform: translateX(150%);
+			}
+			.icon_second {
+				transform: translateX(0%);
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Section Title CSS
+----------------------------------------*/
+.section_title {
+	.subtitle {
+		display: inline-block;
+		font-weight: var(--ts-fw-ebold);
+		line-height: 1.2;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		position: relative;
+		z-index: 1;
+		padding-left: 6px;
+
+		&::before {
+			@include theme-afbf;
+			top: 50%;
+			left: 0;
+			width: 23px;
+			height: 23px;
+			transform: translateY(-50%);
+			background-color: var(--ts-color-theme-secondary);
+			border-radius: 50px;
+			z-index: -1;
+		}
+	}
+	.title {
+		display: block;
+		font-weight: var(--ts-fw-black);
+		line-height: 1.2;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	.desc {
+		font-family: var(--ts-ff-body);
+		font-size: 18px;
+		font-weight: var(--ts-fw-regular);
+		line-height: 1.5;
+		margin-top: 20px;
+
+		p {
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	.button {
+		margin-top: 35px;
+	}
+
+	@media #{$xs} {
+		.subtitle {
+			margin-bottom: 10px;
+		}
+		.desc {
+			margin-top: 15px;
+		}
+		.button {
+			margin-top: 30px;
+		}
+	}
+
+	&.style-2 {
+		.subtitle {
+			padding-left: 0;
+			color: var(--ts-color-heading-primary);
+			padding: 5px 13px;
+
+			&::before {
+				top: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 3px;
+				background-color: var(--ts-color-theme-secondary);
+				@include transform(translateY(0) skew(-20deg));
+			}
+		}
+
+		@media #{$xs, $sm} {
+			.subtitle {
+				font-size: 13px;
+			}
+		}
+	}
+}
+/* !END: Section Title CSS */

@@ -1,0 +1,81 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Service Details CSS
+----------------------------------------*/
+.project_details_content,
+.services_details_content {
+	padding-left: 20px;
+
+	@media #{$xs, $sm, $md, $lg, $xl} {
+		padding-left: 0;
+	}
+
+	.content_box {
+		margin-bottom: 30px;
+
+		&:not(:first-child) {
+			padding-top: 20px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: var(--ts-fw-ebold);
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+
+		.info_boxes {
+			margin-top: 30px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: start;
+			gap: 30px;
+		}
+
+		@media #{$lg, $md, $sm, $xs} {
+			&:not(:first-child) {
+				padding-top: 0;
+			}
+			.info_boxes {
+				justify-content: center;
+				column-gap: 15px;
+				row-gap: 30px;
+			}
+		}
+	}
+
+	.image {
+		margin-bottom: 30px;
+
+		img {
+			border-radius: 10px;
+		}
+
+		&.columns_2 {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			img {
+				flex: 0 0 48%;
+				max-width: 48%;
+			}
+
+			@media #{$sm, $xs} {
+				gap: 30px;
+
+				img {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+/* !END: Service Details CSS */

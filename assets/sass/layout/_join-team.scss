@@ -1,0 +1,127 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Join Team CSS
+----------------------------------------*/
+.join_team_wrap {
+	position: relative;
+	max-width: 1720px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--ts-color-theme-primary);
+	background-image: url(../images/bg/global-white-bg.png);
+	padding: 120px 100px;
+	z-index: 1;
+	overflow: hidden;
+
+	.join_img {
+		@include theme-afbf;
+		right: 0;
+		top: 0;
+		height: 100%;
+		width: 50%;
+		background-color: var(--ts-color-common-white);
+		clip-path: polygon(20% 0%, 101% 0, 101% 101%, 0% 101%);
+		z-index: -1;
+
+		.join_inner_img {
+			@include theme-afbf;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 99%;
+			clip-path: polygon(20% 0%, 101% 0, 101% 101%, 0% 101%);
+		}
+	}
+
+	.section_title {
+		max-width: 635px;
+		width: 100%;
+
+		.title {
+			color: var(--ts-color-common-white);
+		}
+		.desc {
+			color: var(--ts-color-common-white);
+		}
+		.primary_btn {
+			background-color: var(--ts-color-heading-primary);
+			margin-top: 40px;
+			margin-left: 5px;
+
+			&:hover {
+				background-color: var(--ts-color-theme-secondary);
+			}
+		}
+	}
+
+	@media #{$xl} {
+		padding: 100px 50px;
+		.section_title {
+			max-width: 580px;
+		}
+	}
+	@media #{$lg} {
+		padding: 80px 30px;
+		.join_img {
+			clip-path: polygon(30% 0%, 101% 0, 101% 101%, 0% 101%);
+
+			.join_inner_img {
+				clip-path: polygon(30% 0%, 101% 0, 101% 101%, 0% 101%);
+			}
+		}
+
+		.section_title {
+			max-width: 525px;
+		}
+	}
+	@media #{$md} {
+		padding: 80px 20px;
+		.join_img {
+			clip-path: polygon(30% 0%, 101% 0, 101% 101%, 0% 101%);
+
+			.join_inner_img {
+				clip-path: polygon(30% 0%, 101% 0, 101% 101%, 0% 101%);
+			}
+		}
+
+		.section_title {
+			max-width: 525px;
+		}
+	}
+	@media #{$sm, $xs} {
+		padding: 60px 20px;
+		.join_img {
+			width: 65%;
+			clip-path: polygon(30% 0%, 101% 0, 101% 101%, 0% 101%);
+
+			.join_inner_img {
+				clip-path: polygon(30% 0%, 101% 0, 101% 101%, 0% 101%);
+			}
+		}
+
+		.section_title {
+			max-width: 500px;
+
+			.primary_btn {
+				margin-top: 30px;
+			}
+		}
+	}
+	@media #{$sm, $xs} {
+		.join_img {
+			width: 100%;
+			clip-path: polygon(50% 0%, 101% 0, 101% 101%, 0% 101%);
+
+			.join_inner_img {
+				clip-path: polygon(50% 0%, 101% 0, 101% 101%, 0% 101%);
+				background-size: center left;
+			}
+		}
+	}
+}
+/* !END: Join Team CSS */

@@ -1,0 +1,69 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Form CSS
+----------------------------------------*/
+form {
+	.form_group {
+		margin-bottom: 30px;
+
+		select,
+		.nice-select,
+		input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+		textarea {
+			border: 1px solid var(--ts-color-form-bg-1);
+			background-color: var(--ts-color-form-bg-1);
+			border-radius: 5px;
+			color: var(--ts-color-common-white);
+			font-weight: var(--ts-fw-regular);
+			line-height: 1.3;
+			padding: 17px 20px;
+
+			@include placeholder {
+				text-transform: uppercase;
+				color: var(--ts-color-common-white);
+				font-size: 14px;
+			}
+
+			&:focus {
+				border-color: var(--ts-color-heading-primary);
+			}
+		}
+		textarea {
+			min-height: 150px;
+			resize: none;
+		}
+
+		.error {
+			font-size: 14px;
+			line-height: 1;
+			color: #f00;
+		}
+
+		@media #{$xs, $sm} {
+			margin-bottom: 20px;
+
+			select,
+			.nice-select,
+			input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+			textarea {
+				padding: 13px 15px;
+			}
+		}
+	}
+
+	.form_button {
+		margin-left: 5px;
+		@media #{$xs, $sm} {
+			margin-top: 10px;
+		}
+		.form_btn {
+			background-color: var(--ts-color-theme-bg-dark);
+
+			&:hover {
+				background-color: var(--ts-color-theme-secondary);
+			}
+		}
+	}
+}
+/* !END: Form CSS */

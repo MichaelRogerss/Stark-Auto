@@ -1,0 +1,202 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Pricing CSS
+----------------------------------------*/
+.pricing-section {
+	.section_title {
+		max-width: 600px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 60px;
+	}
+
+	@media #{$xs,$sm} {
+		.section_title {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.pricing {
+	&_table {
+		background-color: transparent;
+		border: 1.5px solid var(--ts-color-border-1);
+		border-radius: 10px;
+		padding: 20px;
+		max-width: 416px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+
+		@media #{$lg, $md, $sm, $xs} {
+			padding: 15px;
+		}
+
+		&_inner {
+			position: relative;
+			z-index: 1;
+			background-color: var(--ts-color-theme-bg);
+			border-radius: 10px;
+			overflow: hidden;
+			padding: 40px 40px 50px 40px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url(../images/bg/global-bg.png);
+				z-index: -1;
+			}
+
+			.pricing_header {
+				.label {
+					display: inline-block;
+					font-weight: var(--ts-fw-medium);
+					line-height: 1.2;
+					color: var(--ts-color-text-body);
+					text-transform: capitalize;
+					margin-bottom: 5px;
+				}
+				.price {
+					display: block;
+					font-weight: var(--ts-fw-black);
+					line-height: 1.2;
+					text-transform: uppercase;
+					margin: 0;
+				}
+				.package {
+					display: inline-block;
+					background-color: var(--ts-color-theme-primary);
+					font-family: var(--ts-ff-heading);
+					font-size: 18px;
+					font-weight: var(--ts-fw-ebold);
+					line-height: 1;
+					text-transform: uppercase;
+					color: var(--ts-color-common-white);
+					padding: 11px 25px;
+					border-radius: 8px;
+					transform: skewX(10deg);
+					margin-top: 15px;
+
+					> span {
+						display: inline-block;
+						transform: skewX(-10deg);
+					}
+				}
+			}
+
+			.pricing_feature {
+				border-top: 1px solid var(--ts-color-border-1);
+				padding-top: 31px;
+				margin-top: 30px;
+
+				li {
+					position: relative;
+					z-index: 1;
+					line-height: 1.2;
+					display: inline-block;
+
+					&:not(:last-child) {
+						margin-bottom: 15px;
+					}
+
+					&::before {
+						content: "\f144";
+						font-family: var(--ts-ff-flaticon);
+						color: var(--ts-color-theme-primary);
+						display: inline;
+						line-height: 1;
+						font-size: 20px;
+						position: relative;
+						top: 1px;
+						margin-right: 5px;
+					}
+
+					&:not(.active) {
+						color: var(--ts-color-grey-2);
+
+						&::before {
+							content: "\f00d";
+							font-family: var(--ts-ff-fontawesome);
+							font-weight: var(--ts-fw-bold);
+							color: var(--ts-color-grey-2);
+						}
+					}
+				}
+			}
+
+			.pricing_btn {
+				margin-top: 40px;
+			}
+
+			@media #{$xl, $md, $sm} {
+				padding: 40px 30px;
+			}
+			@media #{$lg} {
+				padding: 40px 20px;
+			}
+			@media #{$xs} {
+				padding: 30px 15px;
+
+				.pricing_header {
+					.package {
+						font-size: 16px;
+						padding: 10px 20px;
+					}
+				}
+			}
+		}
+
+		&.recommend {
+			.pricing_table_inner {
+				background-color: var(--ts-color-theme-bg-dark-2);
+
+				&::before {
+					background-image: url(../images/bg/global-light-bg.png);
+				}
+
+				.pricing_header {
+					.label {
+						color: var(--ts-color-grey-2);
+					}
+					.price {
+						color: var(--ts-color-common-white);
+					}
+				}
+				.pricing_feature {
+					li {
+						color: var(--ts-color-common-white);
+
+						&:not(.active) {
+							color: var(--ts-color-grey-2);
+
+							&::before {
+								color: var(--ts-color-grey-2);
+							}
+						}
+					}
+				}
+				.pricing_btn {
+					.primary_btn {
+						background-color: var(--ts-color-theme-secondary);
+						color: var(--ts-color-common-black);
+
+						.icon_box {
+							.icon_first,
+							.icon_second {
+								color: var(--ts-color-common-black);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* !END: Pricing CSS */
