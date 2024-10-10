@@ -1,0 +1,30 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Author CSS
+----------------------------------------*/
+.author_info {
+	.name {
+		color: var(--ts-color-common-white);
+		text-transform: uppercase;
+		font-weight: var(--ts-fw-ebold);
+		margin: 0;
+
+		a:hover {
+			color: var(--ts-color-theme-primary);
+		}
+	}
+	.designation {
+		display: block;
+		color: var(--ts-color-grey-2);
+		margin-top: 5px;
+		line-height: 1.2;
+	}
+
+	@media #{$xs} {
+		.name {
+			font-size: 15px;
+		}
+	}
+}
+/* !END: Author CSS */

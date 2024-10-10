@@ -1,0 +1,54 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: List CSS
+----------------------------------------*/
+.ts_list {
+	&.columns_2 {
+		columns: 2;
+	}
+
+	li {
+		font-family: var(--ts-ff-heading);
+		font-size: 18px;
+		font-weight: var(--ts-fw-ebold);
+		line-height: 1.2;
+		text-transform: uppercase;
+		color: var(--ts-color-heading-primary);
+		position: relative;
+		z-index: 1;
+		padding-left: 30px;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		&::before {
+			content: "\f144";
+			font-family: var(--ts-ff-flaticon);
+			position: absolute;
+			left: 0;
+			top: 1px;
+			font-size: 20px;
+			line-height: 1;
+			color: var(--ts-color-theme-primary);
+			text-shadow: 0px 2px 0px var(--ts-color-heading-primary);
+		}
+
+		@media #{$xs, $sm} {
+			font-size: 16px;
+
+			&::before {
+				font-size: 18px;
+				top: 0;
+			}
+		}
+	}
+
+	@media #{$sm, $xs} {
+		&.columns_2 {
+			columns: 1;
+		}
+	}
+}
+/* !END: List CSS */

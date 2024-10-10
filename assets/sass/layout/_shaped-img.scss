@@ -1,0 +1,44 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Shaped Image CSS
+----------------------------------------*/
+.shaped_img {
+	position: relative;
+	z-index: 1;
+	margin-top: 15px;
+	margin-left: 20px;
+
+	&::before {
+		position: absolute;
+		content: "";
+		left: -20px;
+		top: -15px;
+		width: 100%;
+		height: 100%;
+		background-color: var(--ts-color-theme-secondary);
+		z-index: -1;
+		border-radius: 10px;
+		mask-image: url(../images/shapes/h2-about-img-shape.svg);
+		mask-size: contain;
+		mask-repeat: no-repeat;
+	}
+
+	img {
+		max-width: 735px;
+		width: 100%;
+		border-radius: 10px;
+		mask-image: url(../images/shapes/h2-about-img-shape.svg);
+		mask-size: contain;
+		mask-repeat: no-repeat;
+	}
+
+	@media #{$xs, $sm} {
+		margin-left: 15px;
+		&::before {
+			top: -10px;
+			left: -15px;
+		}
+	}
+}
+/* !END: Shaped Image CSS */

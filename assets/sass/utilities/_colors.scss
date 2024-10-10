@@ -1,0 +1,35 @@
+$colors: (
+	common: (
+		white: #ffffff,
+		black: #000000,
+	),
+	heading: (
+		primary: #1b1d27,
+	),
+	text: (
+		body: #505459,
+	),
+	theme: (
+		primary: #ff5f2a,
+		secondary: #ffd400,
+		bg: #f5f6fa,
+		bg-dark: #1b2027,
+		bg-dark-2: #12151b,
+	),
+	grey: (
+		1: #292e36,
+		2: #9da0a4,
+		3: #4a4d53,
+		4: #0d1016,
+		5: #24282f,
+	),
+	border: (
+		1: #d9d9d9,
+		2: #dbdee3,
+		3: #d5d6dc,
+		4: rgba(255, 255, 255, 0.1),
+	),
+	form: (
+		bg-1: #ff916b,
+	),
+);
